@@ -1,0 +1,23 @@
+#icons {
+    margin-top: 10px;
+    max-width: 100%;
+}
+#icons .img-responsive {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem 0rem 1rem 0rem;
+}
+@media only screen and (max-width: 845px) {
+
+    #icons .img-responsive {
+        display: none
+    }
+    .header-container h1 {
+        font-size: 20vw !important;
+    }
+}
+.header-container h1{
+    font-size:6vw;
+    text-align: center;
+    font-family: "Lobster", serif;
+}

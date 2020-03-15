@@ -1,0 +1,57 @@
+/*----------Main site _components---------*/
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lobster', serif;   color: #333333;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+#page {
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+.color-nav{
+    background-color: rgba(149,170,196,0.41);
+    font-size: 20px;
+
+}
+@media only screen and (min-width: 845px) {
+    #home{
+        display: none
+
+    }
+}
+.management-bar{
+    text-align: right;
+    background-color: lightblue;
+
+}
+#dropdown-item{
+    font-size: 15px;
+}
+
+#bg-nested-dropdown{
+    background-color: #8fa0ad;
+    border: #8fa0ad;
+    text-align: left;
+    margin-left: 60px;
+}
+
+/*>>>---------------HEADER & NAVBAR--------START----<<<*/
+/*.mr-auto a {
+    float:left;
+    font-size: 15px;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Krub', serif;
+}*/
+
+/*-------Individual site _components---------*/
+
+
+/*>>>---------------HEADER & NAVBAR---------END---<<<*/

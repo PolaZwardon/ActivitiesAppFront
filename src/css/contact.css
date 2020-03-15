@@ -1,0 +1,33 @@
+
+
+.contact-information li{
+    font-size: 20px;
+    text-align: center;
+    background: transparent;
+    list-style-type: none;
+}
+.contact-information{
+    width:70%;
+    margin: auto;
+    height: 200px;
+    background-color: rgba(194,217,231,0.7);
+    text-decoration: none;
+}
+.contact-information ul {
+    padding:0px;
+}
+
+.contact-header{
+    background-color: #8fa0ad;
+    width:70%;
+    margin: auto;
+}
+.contact-header h2{
+    font-size: 35px;
+    text-align: center;
+    font-family: Lobster, serif ;
+
+}
+.contact-container{
+    margin-top: 20px;
+}

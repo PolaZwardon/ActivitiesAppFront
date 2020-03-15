@@ -1,0 +1,23 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 60px;
+    background-color: lightblue;
+    margin-top: auto;
+}
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.text-muted {
+    color: #6c757d!important;
+    text-align: center;
+}
+footer {
+    display: block;
+}
+.copyright {
+    margin-top: -50px;
+}

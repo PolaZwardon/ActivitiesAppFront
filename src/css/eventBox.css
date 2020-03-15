@@ -1,0 +1,44 @@
+.box-header{
+    font-family: 'Lobster', serif;
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: lightblue;
+}
+
+.card {
+    margin: auto;
+    width: 75%;
+    margin-bottom: 20px;
+}
+#catLifestyle{
+    background-color: rgba(145,69,155,0.26);
+}
+#catSport{
+    background-color: rgba(97,161,69,0.26);
+}
+
+.eventbox-footer{
+    background-color: rgba(149,170,196,0.41);
+    font-size: 20px;
+}
+#1{
+    background-color: #333333;
+}
+#2{
+    background-color: whitesmoke;
+}
+.add-event-container{
+    text-align: center;
+
+}
+.add-event-container #add-event-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #8fa0ad;
+    border: #8fa0ad;
+}
+
+
+
+
+
