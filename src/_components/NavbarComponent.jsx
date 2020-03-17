@@ -26,8 +26,11 @@ export default class NavbarComponent extends Component {
 
                 <link href="https://fonts.googleapis.com/css?family=Lobster|Krub&display=swap" rel="stylesheet"/>
 
-                <Navbar className="color-nav" variant="light" expand="lg"  >
 
+                <Navbar className="color-nav" variant="light" expand="lg"  >
+                    <Col xs={4} md={3}>
+                        <Navbar.Brand href="#home"><a>Menu</a></Navbar.Brand>
+                    </Col>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">

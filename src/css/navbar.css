@@ -11,10 +11,12 @@ body {
     align-items: center;
     background-color: aliceblue;
 
+
 }
 .color-nav{
     background-color: rgba(149,170,196,0.41);
     font-size: 20px;
+
 
 }
 @media only screen and (min-width: 845px) {
@@ -23,21 +25,8 @@ body {
 
     }
 }
-.management-bar{
-    text-align: right;
-    background-color: lightblue;
 
-}
-#dropdown-item{
-    font-size: 15px;
-}
 
-#bg-nested-dropdown{
-    background-color: #8fa0ad;
-    border: #8fa0ad;
-    text-align: left;
-    margin-left: 60px;
-}
 
 /*>>>---------------HEADER & NAVBAR--------START----<<<*/
 /*.mr-auto a {

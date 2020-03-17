@@ -1,3 +1,5 @@
+/*>-----------------IconsAndHeader----------------<*/
+
 #icons {
     margin-top: 10px;
     max-width: 100%;
@@ -6,7 +8,9 @@
     max-width: 100%;
     height: auto;
     padding: 1rem 0rem 1rem 0rem;
+
 }
+
 @media only screen and (max-width: 845px) {
 
     #icons .img-responsive {
@@ -15,9 +19,59 @@
     .header-container h1 {
         font-size: 20vw !important;
     }
+    .name-section{
+        display: none;
+    }
 }
 .header-container h1{
-    font-size:6vw;
-    text-align: center;
-    font-family: "Lobster", serif;
+      font-size:6vw;
+      text-align: center;
+      font-family: "Lobster", serif;
 }
+
+
+/*>-----------------IconsAndHeader----------------<*/
+
+
+/*>-------------ProfileManagementBar---------------<*/
+.management-bar{
+    text-align: right;
+    background-color: lightblue;
+}
+.logo-section{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: "Lobster", serif;
+    position:absolute; left: 3rem;
+
+}
+.management-bar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: visible;
+    z-index: 1;
+
+}
+.name-section{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Krub', serif;
+
+}
+#bg-nested-dropdown{
+    font-size: 15px;
+    font-family: 'Krub', serif;
+    background-color: #8fa0ad;
+    border: #8fa0ad;
+    text-align: left;
+    margin-left: 60px;
+}
+
+#dropdown-item{
+    font-size: 15px;
+
+
+}
+/*>-------------ProfileManagementBar---------------<*/
+

@@ -25,9 +25,9 @@ export default class EventCard extends Component {
             <Card className="text-center">
 
                 <Card.Header class="box-header" id={`cat${this.state.category.categoryName}`}>{this.props.eventName}</Card.Header>
-                    <Card.Body>
+                    <Card.Body class="card-body">
                         <Card.Title>Category: <br/>{this.state.category.categoryName} </Card.Title>
-                        <Card.Subtitle> Places taken: {this.props.currentParticipants}/{this.props.maxParticipants} </Card.Subtitle>
+                        <Card.Subtitle id="card-participants"> Places taken: {this.props.currentParticipants}/{this.props.maxParticipants} </Card.Subtitle>
                         <Card.Text>
                             Description: <br/>
                             {this.props.eventDescription}
@@ -36,7 +36,7 @@ export default class EventCard extends Component {
                         <Card.Text>
                             {this.props.eventPlace}
                         </Card.Text>
-                        <Button variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Join</Button>
+                        <Button id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Join</Button>
                     </Card.Body>
                     <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
                 </Card>

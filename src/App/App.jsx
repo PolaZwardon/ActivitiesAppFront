@@ -17,6 +17,7 @@ import {CreateEventpage} from "../CreateEventPage";
 
 
 class App extends React.Component {
+
     constructor(props) {
         super(props);
 
@@ -28,26 +29,32 @@ class App extends React.Component {
     }
 
     render() {
+        const { user, users } = this.props;
         const { alert } = this.props;
-        return (
-            <div className="main-container">
-                {alert.message &&
-                <div className={`alert ${alert.type}`}>{alert.message}</div>
-                }
-                <Router history={history}>
-                    <Switch>
-                        <PrivateRoute exact path="/" component={EventPage}/>
-                        <Route path="/login" component={LoginPage} />
-                        <Route path="/register" component={RegisterPage} />
-                        <Route path="/events" component={EventPage} />
-                        <Route path="/contact" component={ContactPage} />
-                        <Route path="/CreateEventPage" component={CreateEventpage} />
-                        <Redirect from="*" to="/" />
-                    </Switch>
-                </Router>
-            </div>
-        );
-    }
+            return (
+
+                <div className="main-container">
+                    {alert.message &&
+                    <div className={`alert ${alert.type}`}>{alert.message}</div>
+                    }
+                    <Router history={history}>
+
+                        <Switch>
+                            <PrivateRoute exact path="/" component={EventPage}/>
+                            <Route path="/login" component={LoginPage} />
+                            <Route path="/register" component={RegisterPage} />
+                            <Route path="/events" component={EventPage} />
+                            <Route path="/contact" component={ContactPage} />
+                            <Route path="/profile" component={HomePage} />
+                            <Route path="/CreateEventPage" component={CreateEventpage} />
+                            <Redirect from="*" to="/" />
+                        </Switch>
+                    </Router>
+                </div>
+            );
+        }
+
+
 }
 
 function mapState(state) {

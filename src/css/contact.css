@@ -7,27 +7,33 @@
     list-style-type: none;
 }
 .contact-information{
-    width:70%;
     margin: auto;
     height: 200px;
-    background-color: rgba(194,217,231,0.7);
     text-decoration: none;
+    margin-bottom: 20px;
 }
 .contact-information ul {
+    margin-top: 10px;
     padding:0px;
 }
 
 .contact-header{
-    background-color: #8fa0ad;
-    width:70%;
+    width:100%;
     margin: auto;
 }
 .contact-header h2{
+    margin-top: 20px;
     font-size: 35px;
     text-align: center;
     font-family: Lobster, serif ;
+    background-color: rgba(145,69,155,0.26);
 
 }
 .contact-container{
     margin-top: 20px;
+}
+.contact-footer{
+    background-color: rgba(149,170,196,0.41);
+    font-size: 20px;
+    text-align: center;
 }
