@@ -56,7 +56,7 @@ const uiSchema = {
     },
     "eventDate":
         {
-            "ui:widget": "alt-date"
+            "ui:widget": "alt-datetime"
         }
 };
 
