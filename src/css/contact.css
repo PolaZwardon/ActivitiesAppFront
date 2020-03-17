@@ -1,10 +1,12 @@
 
 
 .contact-information li{
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     background: transparent;
     list-style-type: none;
+    font-family: 'Krub', serif;
+
 }
 .contact-information{
     margin: auto;

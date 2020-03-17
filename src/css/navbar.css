@@ -16,13 +16,11 @@ body {
 .color-nav{
     background-color: rgba(149,170,196,0.41);
     font-size: 20px;
-
-
+    font-family: 'Krub', serif;
 }
 @media only screen and (min-width: 845px) {
     #home{
         display: none
-
     }
 }
 

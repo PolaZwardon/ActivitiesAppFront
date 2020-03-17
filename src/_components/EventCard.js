@@ -26,7 +26,7 @@ export default class EventCard extends Component {
 
                 <Card.Header class="box-header" id={`cat${this.state.category.categoryName}`}>{this.props.eventName}</Card.Header>
                     <Card.Body class="card-body">
-                        <Card.Title>Category: <br/>{this.state.category.categoryName} </Card.Title>
+                        <Card.Title id="card-category">{this.state.category.categoryName} </Card.Title>
                         <Card.Subtitle id="card-participants"> Places taken: {this.props.currentParticipants}/{this.props.maxParticipants} </Card.Subtitle>
                         <Card.Text>
                             Description: <br/>
