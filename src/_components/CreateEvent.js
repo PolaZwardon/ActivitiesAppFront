@@ -26,7 +26,7 @@ const mySchema ={
         },
         "eventDescription": {
             "type": "string",
-            "title": "Description"
+            "title": "Description",
         },
         "eventPlace": {
             "type": "string",
@@ -46,6 +46,19 @@ const mySchema ={
         }
     }
 };
+const uiSchema = {
+    "eventDescription":
+        {
+            "ui:widget": "textarea",
+            "ui:options": {
+                rows: 7
+            }
+    },
+    "eventDate":
+        {
+            "ui:widget": "alt-date"
+        }
+};
 
 export default class CreateEvent extends Component {
     constructor(props) {
@@ -59,7 +72,9 @@ export default class CreateEvent extends Component {
 
     render() {
         return (
-            <Form schema={mySchema} onSubmit={this.handleSubmit} />
+            <div class="form-add-event">
+            <Form id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit} />
+            </div>
         )
     }
 }

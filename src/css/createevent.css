@@ -1,0 +1,11 @@
+.form-add-event{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+
+
+}
+.form-add-event #schema{
+    font-size:15px;
+    font-family: 'Krub', serif;
+}

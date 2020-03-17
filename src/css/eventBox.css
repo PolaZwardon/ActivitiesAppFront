@@ -38,13 +38,23 @@
     font-size: 15px;
 }
 .card-body {
-font-size: 15px;
+    font-size: 15px;
+    font-family: 'Krub', serif;
+
 }
 .card-body #join-button {
     font-size: 15px;
 }
 .card-body #card-participants {
     font-size: 15px;
+    margin-bottom: 15px;
+
+}
+.card-body #card-category{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
 }
 
 
