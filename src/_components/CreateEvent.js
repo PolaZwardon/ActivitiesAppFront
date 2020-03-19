@@ -4,7 +4,6 @@ import axios from 'axios';
 let user = JSON.parse(localStorage.getItem('user'));
 
 
-
 const mySchema ={
     "title": "Create Event",
     "type": "object",
@@ -38,7 +37,23 @@ const mySchema ={
         },
         "categoryId": {
             "type": "integer",
-            "title": "Category"
+            "title": "Category",
+            "anyOf": [
+                {
+                    "type": "integer",
+                    "enum": [
+                        1
+                    ],
+                    "title": "Sport"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        2
+                    ],
+                    "title": "Lifestyle"
+                },
+            ]
         },
         "maxEventParticipants": {
             "type": "integer",
@@ -61,21 +76,32 @@ const uiSchema = {
 };
 
 export default class CreateEvent extends Component {
+    state = {
+        categories: [],
+    };
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
 
     handleSubmit({formData}) {
         formData.UserId=user.userId;
         axios.post('http://localhost:4321/api/Event', formData);
     }
 
+    componentDidMount() {
+        axios.get(`http://localhost:4321/api/Category`)
+            .then(res => {
+                const categories = res.data;
+                this.setState({categories: categories});
+            });
+    }
 
     render() {
         return (
             <div class="form-add-event">
-            <Form id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit} />
+            <Form href="/events" id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit} />
             </div>
         )
     }

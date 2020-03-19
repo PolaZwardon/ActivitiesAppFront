@@ -75,9 +75,6 @@ export default class EventCard extends Component {
                             <Card.Text>
                             {this.props.eventPlace}
                             </Card.Text>
-                            <Card.Text>
-                                {this.props.eventId}aaaa
-                            </Card.Text>
                             <Button href="/events" onClick={(e) => this.handleDeleteEvent(this.props.eventId, e)} id="join-button" variant="primary" type="submit" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
                         </Card.Body>
                         <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>

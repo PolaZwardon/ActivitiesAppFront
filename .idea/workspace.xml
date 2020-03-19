@@ -4,6 +4,7 @@
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_components/CreateEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/CreateEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <workItem from="1584297889234" duration="2090000" />
       <workItem from="1584301003501" duration="1096000" />
       <workItem from="1584302115389" duration="21352000" />
-      <workItem from="1584610892189" duration="13980000" />
+      <workItem from="1584610892189" duration="20338000" />
     </task>
     <servers />
   </component>
