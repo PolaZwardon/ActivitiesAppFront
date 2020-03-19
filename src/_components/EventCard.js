@@ -7,11 +7,15 @@ let user = JSON.parse(localStorage.getItem('user'));
 
 export default class EventCard extends Component {
 
-    state = {
-        categoryList: [],
-        category: ""
-    };
+    constructor(props) {
+        super(props);
 
+        this.state = {
+            categoryList: [],
+            category: ""
+        };
+        this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
+    }
     componentDidMount() {
         axios.get(`http://localhost:4321/api/Category/${this.props.categoryId}`)
             .then(res => {
@@ -22,7 +26,7 @@ export default class EventCard extends Component {
     handleDeleteEvent(id) {
         return (e) => this.props.deleteEvent(id);
     }
-    
+
     render() {
         if (user.userTypeId === 1) {
 
@@ -70,7 +74,7 @@ export default class EventCard extends Component {
                             <Card.Text>
                                 {this.props.eventId}aaaa
                             </Card.Text>
-                            <Button onClick={() => this.handleDeleteEvent.bind(this.props.eventId)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
+                            <Button href="/events" onClick={(e) => this.handleDeleteEvent(this.props.eventId, e)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
                         </Card.Body>
                         <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
                     </Card>

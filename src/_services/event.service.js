@@ -37,14 +37,14 @@ function add(event) {
     return fetch(`${config.apiUrl}/api/Event/`, requestOptions).then(handleResponse);
 }
 
-function update(user) {
+function update(event) {
     const requestOptions = {
         method: 'PUT',
         headers: { ...eventHeader(), 'Content-Type': 'application/json' },
-        body: JSON.stringify(user)
+        body: JSON.stringify(event)
     };
 
-    return fetch(`${config.apiUrl}/api/Event/${user.id}`, requestOptions).then(handleResponse);;
+    return fetch(`${config.apiUrl}/api/Event/${event.id}`, requestOptions).then(handleResponse);;
 }
 
 // prefixed function name with underscore because delete is a reserved word in javascript
