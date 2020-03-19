@@ -24,7 +24,11 @@ export default class EventCard extends Component {
             });
     }
     handleDeleteEvent(id) {
-        return (e) => this.props.deleteEvent(id);
+        /*return (e) => this.props.deleteEvent(id);*/
+        axios.delete(`http://localhost:4321/api/Event/${id}`).then(res => {
+            console.log(res);
+            console.log(res.data);
+        })
     }
 
     render() {
@@ -74,7 +78,7 @@ export default class EventCard extends Component {
                             <Card.Text>
                                 {this.props.eventId}aaaa
                             </Card.Text>
-                            <Button href="/events" onClick={(e) => this.handleDeleteEvent(this.props.eventId, e)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
+                            <Button href="/events" onClick={(e) => this.handleDeleteEvent(this.props.eventId, e)} id="join-button" variant="primary" type="submit" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
                         </Card.Body>
                         <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
                     </Card>
