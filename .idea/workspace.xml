@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="" />
+    <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_actions/event.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_constants/event.constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_helpers/event-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_services/event.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/IconsBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/IconsBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/ProfileManagementBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/ProfileManagementBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/user.service.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -34,7 +51,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitledcommonactivityapp/activitiesappfront" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
@@ -65,6 +83,7 @@
       <workItem from="1584297889234" duration="2090000" />
       <workItem from="1584301003501" duration="1096000" />
       <workItem from="1584302115389" duration="21352000" />
+      <workItem from="1584610892189" duration="4128000" />
     </task>
     <servers />
   </component>
@@ -72,9 +91,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="767" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584364817430">
+    <state x="767" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584473955423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="767" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/236.-768.1360.728@0.0.1536.824" timestamp="1584473955423" />
     <state x="767" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584364817430" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1584446297758">
       <screen x="0" y="0" width="1536" height="824" />
@@ -105,13 +125,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584374273012" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1584193302549">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1584475235824">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/236.-768.1360.728@0.0.1536.824" timestamp="1584475235824" />
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584193302549" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584367384668">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584473597971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/236.-768.1360.728@0.0.1536.824" timestamp="1584473597971" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584367384668" />
   </component>
 </project>

@@ -53,8 +53,6 @@ class App extends React.Component {
                 </div>
             );
         }
-
-
 }
 
 function mapState(state) {

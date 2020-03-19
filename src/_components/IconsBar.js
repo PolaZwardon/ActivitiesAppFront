@@ -17,7 +17,7 @@ export default class IconsBar extends Component {
         return (
 
             <Container class="icons-container" id="icons">
-
+                <link href="https://fonts.googleapis.com/css?family=Lobster|Krub&display=swap" rel="stylesheet"/>
                 <Row>
                     <Col xs={6} md={1}>
                         <Image className="img-responsive" src={award} alt={"award"} width='70px' height='70px' />

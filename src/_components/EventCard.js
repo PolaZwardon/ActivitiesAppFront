@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Button, Card } from 'react-bootstrap';
+let user = JSON.parse(localStorage.getItem('user'));
 
 export default class EventCard extends Component {
 
@@ -16,11 +17,12 @@ export default class EventCard extends Component {
                 this.setState({category: category});
             })
     }
-
-
+    
     render() {
+        if (user.userTypeId === 1) {
 
         return (
+
         <div className="cards">
             <Card className="text-center">
 
@@ -42,5 +44,31 @@ export default class EventCard extends Component {
                 </Card>
             </div>
         )
+    }
+        else if(user.userTypeId===2){
+            return (
+
+                <div className="cards">
+                    <Card className="text-center">
+
+                        <Card.Header class="box-header" id={`cat${this.state.category.categoryName}`}>{this.props.eventName}</Card.Header>
+                        <Card.Body class="card-body">
+                            <Card.Title id="card-category">{this.state.category.categoryName} </Card.Title>
+                            <Card.Subtitle id="card-participants"> Places taken: {this.props.currentParticipants}/{this.props.maxParticipants} </Card.Subtitle>
+                            <Card.Text>
+                                Description: <br/>
+                                {this.props.eventDescription}
+                                {console.log(this.state.category.categoryName)}
+                            </Card.Text>
+                            <Card.Text>
+                                {this.props.eventPlace}
+                            </Card.Text>
+                            <Button id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
+                        </Card.Body>
+                        <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
+                    </Card>
+                </div>
+            )
+        }
     }
 }
