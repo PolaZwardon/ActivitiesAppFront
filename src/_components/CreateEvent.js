@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Form from 'react-jsonschema-form';
 import axios from 'axios';
+let user = JSON.parse(localStorage.getItem('user'));
+
 
 
 const mySchema ={
     "title": "Create Event",
     "type": "object",
     "required": [
-        "UserId",
         "eventName",
         "eventDescription",
         "eventPlace",
@@ -17,8 +18,7 @@ const mySchema ={
     "properties": {
 
         "UserId":  {
-            "type": "integer",
-            "title": "User id"
+
         },
         "eventName": {
             "type": "string",
@@ -67,8 +67,10 @@ export default class CreateEvent extends Component {
     }
 
     handleSubmit({formData}) {
+        formData.UserId=user.userId;
         axios.post('http://localhost:4321/api/Event', formData);
     }
+
 
     render() {
         return (
