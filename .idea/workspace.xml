@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_actions/event.actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_constants/event.constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_helpers/event-header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_services/event.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_reducers/event.reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/EventBoxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventBoxes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/IconsBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/IconsBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/ProfileManagementBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/ProfileManagementBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_services/event.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/event.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +73,7 @@
       <workItem from="1584297889234" duration="2090000" />
       <workItem from="1584301003501" duration="1096000" />
       <workItem from="1584302115389" duration="21352000" />
-      <workItem from="1584610892189" duration="4128000" />
+      <workItem from="1584610892189" duration="8040000" />
     </task>
     <servers />
   </component>

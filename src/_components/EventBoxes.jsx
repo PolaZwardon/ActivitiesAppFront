@@ -4,6 +4,7 @@ import EventCard from "./EventCard";
 
 
 
+
 export default class EventBoxes extends Component {
 
     state = {
@@ -25,6 +26,7 @@ export default class EventBoxes extends Component {
                 this.state.eventList.map(event =>
                 <EventCard
                     categoryId = {event.categoryId}
+                    eventId = {event.eventId}
                     eventName = {event.eventName}
                     eventDescription = {event.eventDescription}
                     eventPlace = {event.eventPlace}

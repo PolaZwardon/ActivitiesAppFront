@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Button, Card } from 'react-bootstrap';
+import {eventActions} from "../_actions/event.actions";
+import {connect} from "react-redux";
 let user = JSON.parse(localStorage.getItem('user'));
 
 export default class EventCard extends Component {
@@ -15,7 +17,10 @@ export default class EventCard extends Component {
             .then(res => {
                 const category = res.data;
                 this.setState({category: category});
-            })
+            });
+    }
+    handleDeleteEvent(id) {
+        return (e) => this.props.deleteEvent(id);
     }
     
     render() {
@@ -33,7 +38,6 @@ export default class EventCard extends Component {
                         <Card.Text>
                             Description: <br/>
                             {this.props.eventDescription}
-                            {console.log(this.state.category.categoryName)}
                         </Card.Text>
                         <Card.Text>
                             {this.props.eventPlace}
@@ -57,18 +61,31 @@ export default class EventCard extends Component {
                             <Card.Subtitle id="card-participants"> Places taken: {this.props.currentParticipants}/{this.props.maxParticipants} </Card.Subtitle>
                             <Card.Text>
                                 Description: <br/>
+
                                 {this.props.eventDescription}
-                                {console.log(this.state.category.categoryName)}
                             </Card.Text>
                             <Card.Text>
-                                {this.props.eventPlace}
+                            {this.props.eventPlace}
                             </Card.Text>
-                            <Button id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
+                            <Card.Text>
+                                {this.props.eventId}aaaa
+                            </Card.Text>
+                            <Button onClick={() => this.handleDeleteEvent.bind(this.props.eventId)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Delete</Button>
                         </Card.Body>
                         <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
                     </Card>
                 </div>
             )
-        }
-    }
+    }}
 }
+function mapState(state) {
+    const { users, authentication, events, event } = state;
+    const { user } = authentication;
+    return { user, users, events, event };
+}
+
+const actionCreators = {
+    getEvents: eventActions.getAll,
+    deleteEvent: eventActions.delete
+}
+const connectedEventCard = connect(mapState, actionCreators)(EventCard);
