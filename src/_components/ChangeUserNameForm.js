@@ -20,10 +20,7 @@ const mySchema ={
             "type": "string",
             "title": "Name"
         },
-
-        "password":  {
-
-        },
+        
         "email":  {
 
         },
@@ -43,11 +40,10 @@ export default class ChangeUserNameForm extends Component {
 
     handleSubmit({formData}) {
         formData.userId=user.userId;
-        formData.password=user.password;
         formData.email=user.email;
         formData.userTypeId=user.userTypeId;
 
-        axios.put(`http://localhost:4321/api/User/${user.userId}`, formData).then(res => {
+        axios.patch(`http://localhost:4321/api/User/${user.userId}`, formData).then(res => {
             console.log(res);
             console.log(res.data);
         })
