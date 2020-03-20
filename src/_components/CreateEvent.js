@@ -53,6 +53,55 @@ const mySchema ={
                     ],
                     "title": "Lifestyle"
                 },
+                {
+                    "type": "integer",
+                    "enum": [
+                        3
+                    ],
+                    "title": "Fun"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        4
+                    ],
+                    "title": "Music"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        5
+                    ],
+                    "title": "Travel"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        6
+                    ],
+                    "title": "Hobbies"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        7
+                    ],
+                    "title": "Outdoor"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        8
+                    ],
+                    "title": "Art/Cultural"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        9
+                    ],
+                    "title": "Eating out"
+                },
             ]
         },
         "maxEventParticipants": {
@@ -87,7 +136,9 @@ export default class CreateEvent extends Component {
 
     handleSubmit({formData}) {
         formData.UserId=user.userId;
+
         axios.post('http://localhost:4321/api/Event', formData);
+
     }
 
     componentDidMount() {
@@ -101,7 +152,7 @@ export default class CreateEvent extends Component {
     render() {
         return (
             <div class="form-add-event">
-            <Form href="/events" id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit} />
+            <Form  id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit} href="/events" />
             </div>
         )
     }

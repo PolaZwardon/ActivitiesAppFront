@@ -13,8 +13,17 @@
 #catLifestyle{
     background-color: rgba(145,69,155,0.26);
 }
-#catSport{
+#catSport, #catEating{
     background-color: rgba(97,161,69,0.26);
+}
+#catMusic, #catFun{
+    background-color: bisque;
+}
+#catHobbies{
+    background-color: rgba(211,191,126,0.59);
+}
+#catOutdoor, #catTravel{
+    background-color: rgba(121,211,169,0.59);
 }
 
 .eventbox-footer{
