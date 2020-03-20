@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_components/ChangeUserNameForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EventBoxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventBoxes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,15 +114,27 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584374273012" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1584475235824">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1584708973077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/236.-768.1360.728@0.0.1536.824" timestamp="1584475235824" />
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584193302549" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584708973077" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584473597971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/236.-768.1360.728@0.0.1536.824" timestamp="1584473597971" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584367384668" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/LoginPage/LoginPage.jsx</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
