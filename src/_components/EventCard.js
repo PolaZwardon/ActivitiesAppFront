@@ -32,13 +32,12 @@ export default class EventCard extends Component {
     }
 
     render() {
-        if (user.userTypeId === 1) {
+        if (user.userTypeId === 1&&user.userId!==this.props.userId) {
 
         return (
 
         <div className="cards">
             <Card className="text-center">
-
                 <Card.Header class="box-header" id={`cat${this.state.category.categoryName}`}>{this.props.eventName}</Card.Header>
                     <Card.Body class="card-body">
                         <Card.Title id="card-category">{this.state.category.categoryName} </Card.Title>
@@ -57,7 +56,7 @@ export default class EventCard extends Component {
             </div>
         )
     }
-        else if(user.userTypeId===2){
+        else if(user.userTypeId===2||user.userId===this.props.userId){
             return (
 
                 <div className="cards">
