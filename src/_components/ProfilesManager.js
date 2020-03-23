@@ -5,6 +5,7 @@ import axios from "axios";
 import {connect} from "react-redux";
 import {userActions} from "../_actions";
 import EditProfile from "./EditProfile";
+import {history} from "../_helpers";
 
 export default class ProfilesManager extends Component {
 
@@ -13,11 +14,17 @@ export default class ProfilesManager extends Component {
 
         this.state = {
             eventList: [],
+            clicked: false,
+            userType: "",
+            userEmail: "",
+            userId: ""
         };
     }
-    handleEditUser(){
-            return(<EditProfile/>)
-
+    handleEditUser(userTypeId, email, id){
+        this.setState({clicked: true});
+        this.setState({userType: userTypeId});
+        this.setState({userEmail: email});
+        this.setState({userId: id});
     }
     handleDeleteUser(id) {
         axios.delete(`http://localhost:4321/api/User/${id}`).then(res => {
@@ -26,22 +33,50 @@ export default class ProfilesManager extends Component {
         })
     }
     render() {
+        if(this.state.clicked===false){
             return (
                 <tbody>
                 <tr>
                     <td>{this.props.userId}</td>
                     <td>{this.props.name}</td>
                     <td>{this.props.email}</td>
-                    <Button variant="info" onClick={(e) => this.handleEditUser(e)}>Edit</Button>{' '}
+                    <Button variant="info" onClick={(e) => this.handleEditUser(this.props.userTypeId, this.props.email, this.props.userId, e)}>Edit</Button>{' '}
                     <Button href="/profiles" variant="danger"
                             onClick={(e) => this.handleDeleteUser(this.props.userId, e)}>
                         Delete
                     </Button>
                 </tr>
-
                 </tbody>
 
-            )
+            )}
+            else if(this.state.clicked){
+                return (
+                    <tbody>
+                    <tr>
+                        <td>{this.props.userId}</td>
+                        <td>{this.props.name}</td>
+                        <td>{this.props.email}</td>
+                        <Button variant="info" onClick={(e) => this.handleEditUser(e)}>Edit</Button>{' '}
+                        <Button href="/profiles" variant="danger"
+                                onClick={(e) => this.handleDeleteUser(this.props.userId, e)}>
+
+                            Delete
+                        </Button>
+                        <EditProfile
+                        userTypeId={this.state.userType}
+                        userEmail={this.state.userEmail}
+                        userId={this.state.userId}
+
+                        />
+                    </tr>
+
+                    </tbody>
+
+
+                )
+
+        }
+
     }
 
 }
