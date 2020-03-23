@@ -25,9 +25,9 @@ export default class EventBoxes extends Component {
         return (
                 this.state.eventList.map(event =>
                 <EventCard
+                    eventId = {event.eventId}
                     categoryId = {event.categoryId}
                     userId = {event.userId}
-                    eventId = {event.eventId}
                     eventName = {event.eventName}
                     eventDescription = {event.eventDescription}
                     eventPlace = {event.eventPlace}

@@ -2,11 +2,9 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card } from 'react-bootstrap';
 import axios from "axios";
-import {eventActions} from "../_actions/event.actions";
 import {connect} from "react-redux";
 import {userActions} from "../_actions";
-import ListGroup from "react-bootstrap/ListGroup";
-import Table from "react-bootstrap/Table";
+import EditProfile from "./EditProfile";
 
 export default class ProfilesManager extends Component {
 
@@ -17,7 +15,10 @@ export default class ProfilesManager extends Component {
             eventList: [],
         };
     }
+    handleEditUser(){
+            return(<EditProfile/>)
 
+    }
     handleDeleteUser(id) {
         axios.delete(`http://localhost:4321/api/User/${id}`).then(res => {
             console.log(res);
@@ -25,26 +26,26 @@ export default class ProfilesManager extends Component {
         })
     }
     render() {
+            return (
+                <tbody>
+                <tr>
+                    <td>{this.props.userId}</td>
+                    <td>{this.props.name}</td>
+                    <td>{this.props.email}</td>
+                    <Button variant="info" onClick={(e) => this.handleEditUser(e)}>Edit</Button>{' '}
+                    <Button href="/profiles" variant="danger"
+                            onClick={(e) => this.handleDeleteUser(this.props.userId, e)}>
+                        Delete
+                    </Button>
+                </tr>
 
-        return (
+                </tbody>
 
-
-    <tbody>
-    <tr>
-    <td>{this.props.userId}</td>
-    <td>{this.props.name}</td>
-    <td>{this.props.email}</td>
-        <Button variant="info" >Edit</Button>{' '}
-        <Button href="/profiles" variant="danger" onClick={(e) => this.handleDeleteUser(this.props.userId, e)}>Delete</Button>
-
-    </tr>
-
-    </tbody>
-
-
-        )
+            )
     }
+
 }
+
 function mapState(state) {
     const { users, authentication, events, event } = state;
     const { user } = authentication;

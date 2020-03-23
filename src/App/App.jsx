@@ -40,9 +40,8 @@ class App extends React.Component {
                     <div className={`alert ${alert.type}`}>{alert.message}</div>
                     }
                     <Router history={history}>
-
                         <Switch>
-                            <PrivateRoute exact path="/" component={EventPage}/>
+                            <PrivateRoute  exact path="/" component={EventPage}/>
                             <Route path="/login" component={LoginPage} />
                             <Route path="/register" component={RegisterPage} />
                             <Route path="/events" component={EventPage} />

@@ -1,39 +1,28 @@
 import React, { Component } from 'react';
 import Form from 'react-jsonschema-form';
 import axios from 'axios';
-import {EventPage} from "../EventPage";
-import {Route} from "react-router-dom";
-import Redirect from "react-router-dom/es/Redirect";
-let user = JSON.parse(localStorage.getItem('user'));
 
+let user = JSON.parse(localStorage.getItem('user'));
 
 const mySchema ={
     "title": "Change username",
     "type": "object",
     "required": [
-
         "name"
     ],
     "properties": {
-
         "userId":  {
-
         },
         "name": {
             "type": "string",
             "title": "Name"
         },
-
         "email":  {
-
         },
         "userTypeId":  {
-
         },
     }
 };
-
-
 
 export default class ChangeUserNameForm extends Component {
 
@@ -41,7 +30,6 @@ export default class ChangeUserNameForm extends Component {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
 
     handleSubmit({formData}) {
         formData.email=user.email;
@@ -51,9 +39,7 @@ export default class ChangeUserNameForm extends Component {
             console.log(res);
             console.log(res.data);
         });
-
     };
-
 
     render() {
         return (

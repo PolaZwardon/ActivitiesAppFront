@@ -13,7 +13,8 @@ export default class EventCard extends Component {
         this.state = {
             categoryList: [],
             category: "",
-            userInfo: ""
+            userInfo: "",
+            button: "Join"
         };
         this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
     }
@@ -32,6 +33,25 @@ export default class EventCard extends Component {
             console.log(res.data);
         })
     }
+    handleJoinEvent(eventId, userId, currentParticipants, maxParticipants) {
+        if(currentParticipants<maxParticipants){
+            /*return (e) => this.props.deleteEvent(id);*/
+            axios.post(`http://localhost:4321/api/Event/${eventId}/${userId}`, {
+                headers: {Content: "application/json"}
+            });
+            this.setState({button: "Leave"});
+/*
+            history.push("/events");
+*/
+        }
+
+        //patch dodajacy +1 uzytkownika do eventu
+/*        axios.patch(`http://localhost:4321/api/Event/${eventId}/`).then(res => {
+            console.log(res);
+            console.log(res.data);
+        })*/
+    }
+
 
     render() {
         if (user.userTypeId === 1&&user.userId!==this.props.userId) {
@@ -51,8 +71,11 @@ export default class EventCard extends Component {
                         <Card.Text>
                             {this.props.eventPlace}
                         </Card.Text>
+                        <Card.Text>
+                            {this.props.eventId}
+                        </Card.Text>
 
-                        <Button id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>Join</Button>
+                        <Button href="/events" onClick={(e) => this.handleJoinEvent(this.props.eventId, user.userId, this.props.currentParticipants, this.props.maxParticipants, e)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>{this.state.button}</Button>
                     </Card.Body>
                     <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
                 </Card>

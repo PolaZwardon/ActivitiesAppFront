@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link, Router} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { history } from '../_helpers';
 
@@ -33,7 +33,6 @@ class LoginPage extends React.Component {
     handleChange(e) {
         const { name, value } = e.target;
         this.setState({ [name]: value });
-     
 
     }
 
