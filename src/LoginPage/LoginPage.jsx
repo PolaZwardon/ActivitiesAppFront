@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { history } from '../_helpers';
 
 import { userActions } from '../_actions';
 import IconsBar from "../_components/IconsBar";
@@ -32,6 +33,8 @@ class LoginPage extends React.Component {
     handleChange(e) {
         const { name, value } = e.target;
         this.setState({ [name]: value });
+     
+
     }
 
     handleSubmit(e) {
@@ -55,7 +58,7 @@ class LoginPage extends React.Component {
     <div class="underline">-</div>
         <div class="login-container">
                 <h2>Login</h2>
-                <form id="login-form "name="form" onSubmit={this.handleSubmit}>
+                <form id="login-form " name="form" onSubmit={this.handleSubmit}>
                     <div className={'form-group' + (submitted && !email ? ' has-error' : '')}>
                         <label htmlFor="email">Email</label>
                         <input type="text" className="form-control" name="email" value={email} onChange={this.handleChange} />

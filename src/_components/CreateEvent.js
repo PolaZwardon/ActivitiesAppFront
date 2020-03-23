@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Form from 'react-jsonschema-form';
 import axios from 'axios';
+import { history } from '../_helpers';
+
 let user = JSON.parse(localStorage.getItem('user'));
 
 
@@ -139,6 +141,9 @@ export default class CreateEvent extends Component {
 
         axios.post('http://localhost:4321/api/Event', formData);
 
+        history.push("/events")
+
+
     }
 
     componentDidMount() {
@@ -147,12 +152,17 @@ export default class CreateEvent extends Component {
                 const categories = res.data;
                 this.setState({categories: categories});
             });
+
     }
 
     render() {
         return (
             <div class="form-add-event">
-            <Form  id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit} href="/events" />
+            <Form  id="schema" schema={mySchema} uiSchema={uiSchema} onSubmit={this.handleSubmit}>
+
+            </Form>
+
+
             </div>
         )
     }

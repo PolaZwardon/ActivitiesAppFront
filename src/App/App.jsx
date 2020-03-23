@@ -14,6 +14,7 @@ import { RegisterPage } from '../RegisterPage';
 import { EventPage } from '../EventPage';
 import { ContactPage } from '../ContactPage';
 import {CreateEventpage} from "../CreateEventPage";
+import {ProfilesManagerPage} from "../ProfilesManagerPage";
 
 
 class App extends React.Component {
@@ -24,6 +25,7 @@ class App extends React.Component {
         history.listen((location, action) => {
             // clear alert on location change
             this.props.clearAlerts();
+
         });
 
     }
@@ -46,6 +48,7 @@ class App extends React.Component {
                             <Route path="/events" component={EventPage} />
                             <Route path="/contact" component={ContactPage} />
                             <Route path="/profile" component={HomePage} />
+                            <Route path="/profiles" component={ProfilesManagerPage} />
                             <Route path="/CreateEventPage" component={CreateEventpage} />
                             <Redirect from="*" to="/" />
                         </Switch>

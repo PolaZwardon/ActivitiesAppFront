@@ -52,7 +52,7 @@ class HomePage extends React.Component {
                                 <h1>{user.email}</h1>
                             </ul>
                             <div class="button-container">
-                                <Link id="profile-logout-button" to="/login">Logout</Link>
+                                <Button id="profile-logout-button" href="/login">Logout</Button>
 
                             </div>
 
