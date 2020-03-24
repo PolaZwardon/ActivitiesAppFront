@@ -18,14 +18,17 @@ class Eventpage extends Component {
 
     componentDidMount() {
         this.props.getUsers();
+
     }
 
     handleDeleteUser(id) {
         return (e) => this.props.deleteUser(id);
     }
+
     render()
     {
         return (
+
             <div id="page">
                 <div id="container-wrap">
                     <ProfileManagementBar/>

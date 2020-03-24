@@ -16,6 +16,7 @@ export default class EventCard extends Component {
             userInfo: "",
             button: "Join"
         };
+
         this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
     }
     componentDidMount() {
@@ -25,13 +26,16 @@ export default class EventCard extends Component {
                 this.setState({category: category});
 
             });
+
     }
     handleDeleteEvent(id) {
         /*return (e) => this.props.deleteEvent(id);*/
         axios.delete(`http://localhost:4321/api/Event/${id}`).then(res => {
             console.log(res);
             console.log(res.data);
-        })
+        });
+        location.reload();
+
     }
     handleJoinEvent(eventId, userId, currentParticipants, maxParticipants) {
         if(currentParticipants<maxParticipants){
@@ -40,9 +44,8 @@ export default class EventCard extends Component {
                 headers: {Content: "application/json"}
             });
             this.setState({button: "Leave"});
-/*
-            history.push("/events");
-*/
+            location.reload();
+
         }
 
         //patch dodajacy +1 uzytkownika do eventu

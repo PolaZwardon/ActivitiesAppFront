@@ -141,9 +141,8 @@ export default class CreateEvent extends Component {
 
         axios.post('http://localhost:4321/api/Event', formData);
 
-        history.push("/events")
-
-
+        history.push("/events");
+        location.reload();
     }
 
     componentDidMount() {

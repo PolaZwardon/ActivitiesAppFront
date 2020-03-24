@@ -26,6 +26,7 @@ class App extends React.Component {
             // clear alert on location change
             this.props.clearAlerts();
 
+
         });
 
     }

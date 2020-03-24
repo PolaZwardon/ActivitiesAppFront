@@ -38,25 +38,19 @@ export default class EditProfile extends Component {
             console.log(res);
             console.log(res.data);
         });
+        location.reload();
+
     };
 
     render() {
 
         return (
-            <Modal.Dialog>
-                <Modal.Header closeButton>
-                    <Modal.Title>Edit Profile</Modal.Title>
-                </Modal.Header>
 
-                <Modal.Body>
                     <div className="form-change-name">
                         <Form id="schema" schema={mySchema} onSubmit={this.handleSubmit}>
                         </Form>
                     </div>
-                </Modal.Body>
-                <Modal.Footer>
-                </Modal.Footer>
-            </Modal.Dialog>
+
 )
 
     }

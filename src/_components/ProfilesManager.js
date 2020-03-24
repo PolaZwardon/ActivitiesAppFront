@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {BaseSyntheticEvent as e, Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card } from 'react-bootstrap';
 import axios from "axios";
@@ -6,6 +6,8 @@ import {connect} from "react-redux";
 import {userActions} from "../_actions";
 import EditProfile from "./EditProfile";
 import {history} from "../_helpers";
+import {Modal} from "react-bootstrap";
+
 
 export default class ProfilesManager extends Component {
 
@@ -25,6 +27,7 @@ export default class ProfilesManager extends Component {
         this.setState({userType: userTypeId});
         this.setState({userEmail: email});
         this.setState({userId: id});
+
     }
     handleDeleteUser(id) {
         axios.delete(`http://localhost:4321/api/User/${id}`).then(res => {
@@ -32,6 +35,12 @@ export default class ProfilesManager extends Component {
             console.log(res.data);
         })
     }
+    handleWindowClose(){
+        this.setState({ clicked: false });
+        location.reload();
+
+    }
+
     render() {
         if(this.state.clicked===false){
             return (
@@ -40,12 +49,14 @@ export default class ProfilesManager extends Component {
                     <td>{this.props.userId}</td>
                     <td>{this.props.name}</td>
                     <td>{this.props.email}</td>
-                    <Button variant="info" onClick={(e) => this.handleEditUser(this.props.userTypeId, this.props.email, this.props.userId, e)}>Edit</Button>{' '}
+                    <Button variant="info" onClick={(e) => this.handleEditUser(this.props.userTypeId, this.props.email, this.props.userId, e)}>Edit
+                    </Button>{' '}
                     <Button href="/profiles" variant="danger"
                             onClick={(e) => this.handleDeleteUser(this.props.userId, e)}>
                         Delete
                     </Button>
                 </tr>
+
                 </tbody>
 
             )}
@@ -56,24 +67,37 @@ export default class ProfilesManager extends Component {
                         <td>{this.props.userId}</td>
                         <td>{this.props.name}</td>
                         <td>{this.props.email}</td>
+
                         <Button variant="info" onClick={(e) => this.handleEditUser(e)}>Edit</Button>{' '}
                         <Button href="/profiles" variant="danger"
                                 onClick={(e) => this.handleDeleteUser(this.props.userId, e)}>
 
                             Delete
                         </Button>
+                        <Modal.Dialog>
+                            <Modal.Header>
+                                <Modal.Title>Edit Profile</Modal.Title>
+                            </Modal.Header>
+
+                            <Modal.Body>
                         <EditProfile
                         userTypeId={this.state.userType}
                         userEmail={this.state.userEmail}
                         userId={this.state.userId}
                         />
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={(e) => this.handleWindowClose(e)} variant="primary">Cancel</Button>
+                    </Modal.Footer>
+                    </Modal.Dialog>
                     </tr>
                     </tbody>
                 )
         }
     }
 }
-
+function refreshPage() {
+}
 function mapState(state) {
     const { users, authentication, events, event } = state;
     const { user } = authentication;

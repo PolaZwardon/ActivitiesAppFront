@@ -44,6 +44,7 @@ class LoginPage extends React.Component {
         if (email && password) {
             this.props.login(email, password);
         }
+
     }
 
     render() {
