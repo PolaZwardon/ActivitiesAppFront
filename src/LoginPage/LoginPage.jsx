@@ -11,7 +11,9 @@ import '../css/navbar.css';
 import '../css/iconsBar.css';
 import '../css/footer.css';
 import '../css/login.css';
+import Image from "react-bootstrap/Image";
 
+const community1 = require('../img/join.png').default;
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -52,22 +54,25 @@ class LoginPage extends React.Component {
         const { email, password, submitted } = this.state;
         return (
 
-    <div class="loginpage-container">
+<div>
         <div className="upperline">-</div>
         <IconsBar/>
     <div class="underline">-</div>
-        <div class="login-container">
+
+    <div className="loginpage-container">
+
+    <div class="login-container">
                 <h2>Login</h2>
                 <form id="login-form " name="form" onSubmit={this.handleSubmit}>
                     <div className={'form-group' + (submitted && !email ? ' has-error' : '')}>
-                        <label htmlFor="email">Email</label>
+                        <label class="label" htmlFor="email">Email</label>
                         <input type="text" className="form-control" name="email" value={email} onChange={this.handleChange} />
                         {submitted && !email &&
                             <div className="help-block">Username is required</div>
                         }
                     </div>
                     <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
-                        <label htmlFor="password">Password</label>
+                        <label class="label" htmlFor="password">Password</label>
                         <input type="password" className="form-control" name="password" value={password} onChange={this.handleChange} />
                         {submitted && !password &&
                             <div className="help-block">Password is required</div>
@@ -83,7 +88,7 @@ class LoginPage extends React.Component {
                 </form>
             </div>
         <Footer/>
-
+    </div>
     </div>
         );
     }

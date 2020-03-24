@@ -1,11 +1,21 @@
 .login-container {
+    position: relative;
+    top:50px;
     width: 470px;
     margin: auto;
-    margin-bottom: 170px;
-    margin-top: 50px;
+    margin-bottom: 270px;
+    background-color: rgba(212,240,255,0.85);
+    padding: 20PX;
 }
 .loginpage-container{
+
+    background-image: url("../img/join.png");
+    background-position: top;
     background-color: aliceblue;
+}
+.login-container h2{
+    text-align: center;
+
 }
 .underline{
     background-color: rgba(145,69,155,0.26);
@@ -13,4 +23,13 @@
 .upperline{
     background-color: lightblue;
 
+}
+.login-image{
+    height: 30%;
+    width: 30%;
+    margin:auto;
+}
+.label{
+    color: #333333;
+    font-size: 15px;
 }
