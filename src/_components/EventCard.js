@@ -71,10 +71,6 @@ export default class EventCard extends Component {
                         <Card.Text>
                             {this.props.eventPlace}
                         </Card.Text>
-                        <Card.Text>
-                            {this.props.eventId}
-                        </Card.Text>
-
                         <Button href="/events" onClick={(e) => this.handleJoinEvent(this.props.eventId, user.userId, this.props.currentParticipants, this.props.maxParticipants, e)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>{this.state.button}</Button>
                     </Card.Body>
                     <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
