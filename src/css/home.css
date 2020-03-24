@@ -1,10 +1,57 @@
 .home-carousel{
-    width: 60%;
+    width: 70%;
     margin:auto;
 }
 .home-carousel h3{
-    
+    color: #333333;
+    font-family: Lobster;
+    font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333333;
+    background-color: bisque;
+    margin-bottom: 20px;
+
+}
+.page{
+    background-color: aliceblue;
+}
+.homePage-header{
+    width: 70%;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Lobster, serif ;
+    background-color: transparent;
+}
+.homePage-header h2{
     font-size: 50px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+
+
+}
+.homePage-section-header{
+
+}
+.homePage-section-header h2{
+    margin-top: 25px;
+    font-size: 35px;
+    font-family: Lobster;
+    text-align: center;
+
+}
+.section-information{
+    font-family: Krub;
+    font-size: 17px;
+    margin: 25px 100px;
+
+
+}
+.about-footer{
+    margin-top: 25px;
+    background-color: rgba(149,170,196,0.41);
+    font-size: 20px;
+    text-align: center;
+}
+.about-body hr{
+    color: rgba(149,170,196,0.41);
+height: 3px;
 }

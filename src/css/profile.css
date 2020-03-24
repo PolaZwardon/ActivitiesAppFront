@@ -1,5 +1,5 @@
 .home-container {
-    width: 470px;
+    width: 70%;
     margin: auto;
     margin-bottom: 170px;
     margin-top: 50px;
@@ -31,4 +31,7 @@
     text-align: center;
     font-family: Krub, serif ;
 
+}
+.home-card{
+    background-color: aliceblue;
 }
