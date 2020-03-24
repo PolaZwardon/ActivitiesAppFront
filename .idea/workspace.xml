@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProfilePage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/join-us.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/join.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/multicultural1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/multicultural1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/multicultural2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/multicultural2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPage/Eventpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPage/Eventpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/CreateEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/CreateEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/EventCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/ProfilesManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/ProfilesManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -36,12 +42,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YwB96Zck7Q9WEKluu5ANuqjobt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -50,6 +60,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src" />
       <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src\EventPage" />
@@ -83,6 +96,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="767" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584473955423">

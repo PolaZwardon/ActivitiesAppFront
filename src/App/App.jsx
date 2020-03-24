@@ -15,6 +15,7 @@ import { EventPage } from '../EventPage';
 import { ContactPage } from '../ContactPage';
 import {CreateEventpage} from "../CreateEventPage";
 import {ProfilesManagerPage} from "../ProfilesManagerPage";
+import {ProfilePage} from "../ProfilePage";
 
 
 class App extends React.Component {
@@ -42,12 +43,12 @@ class App extends React.Component {
                     }
                     <Router history={history}>
                         <Switch>
-                            <PrivateRoute  exact path="/" component={EventPage}/>
+                            <PrivateRoute  exact path="/" component={HomePage}/>
                             <Route path="/login" component={LoginPage} />
                             <Route path="/register" component={RegisterPage} />
                             <Route path="/events" component={EventPage} />
                             <Route path="/contact" component={ContactPage} />
-                            <Route path="/profile" component={HomePage} />
+                            <Route path="/profile" component={ProfilePage} />
                             <Route path="/profiles" component={ProfilesManagerPage} />
                             <Route path="/CreateEventPage" component={CreateEventpage} />
                             <Redirect from="*" to="/" />

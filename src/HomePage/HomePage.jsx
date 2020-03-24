@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Button, Card } from 'react-bootstrap';
 import Form from 'react-jsonschema-form';
-
+import Carousel from 'react-bootstrap/Carousel'
+import Image from 'react-bootstrap/Image'
 
 
 import { userActions } from '../_actions';
@@ -16,70 +17,63 @@ import Footer from "../_components/Footer";
 import '../css/home.css';
 import ChangeUserNameForm from "../_components/ChangeUserNameForm";
 
+const community1 = require('../img/join.png').default;
+const community2 = require('../img/multicultural1.png').default;
+const community3 = require('../img/multicultural2.png').default;
+
+
+
+
 
 class HomePage extends React.Component {
-/*
-    componentDidMount() {
-        this.props.getUsers();
-    }
-*/
-
-/*    handleDeleteUser(id) {
-        return (e) => this.props.deleteUser(id);
-    }*/
-
 
     render() {
-        const { user, users } = this.props;
+
         return (
 
-            <div class="home-card">
+            <div class="home">
                 <ProfileManagementBar/>
                 <IconsBar/>
                 <NavbarComponent/>
-                <Card className="home-container">
-                    <Card.Header class="home-header">
-                        <h2>Edit your profile</h2>
-                    </Card.Header>
-                    <Card.Body class="contact-body">
-                        <Card.Subtitle class="home-information">
-                            <ul>
-                                <h1>{user.name}</h1>
-                                <div>
-                                    <ChangeUserNameForm/>
+                <div class="home-carousel">
+                <Carousel>
+                    <Carousel.Item>
+                        <Image
+                            className="d-block w-100"
+                            src={community3}
+                            alt="First slide"
 
-                                </div>
-                                <h1>{user.email}</h1>
-                            </ul>
-                            <div class="button-container">
-                                <Button id="profile-logout-button" href="/login">Logout</Button>
 
-                            </div>
+                        />
+                        <Carousel.Caption>
+                            <h3>Share your passions with others!</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image
+                            className="d-block w-100"
+                            src={community2}
+                            alt="First slide"
 
-                        </Card.Subtitle>
 
-                    </Card.Body>
-                    <Card.Footer className="text-mute" class="contact-footer">-</Card.Footer>
-                </Card>
+                        />
+                        <Carousel.Caption>
+                            <h3>Meet new friends and gain experiences!</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image
+                            className="d-block w-100"
+                            src={community1}
+                            alt="First slide"
 
-{/*                <p>You're logged in with React!!</p>
-                <h3>All registered users:</h3>
-                {users.loading && <em>Loading users...</em>}
-                {users.error && <span className="text-danger">ERROR: {users.error}</span>}
-                {users.items &&
-                    <ul>
-                        {users.items.map((user, index) =>
-                            <li key={user.id}>
-                                {user.firstName + ' ' + user.lastName}
-                                {
-                                    user.deleting ? <em> - Deleting...</em>
-                                    : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
-                                    : <span> - <a onClick={this.handleDeleteUser(user.id)}>Delete</a></span>
-                                }
-                            </li>
-                        )}
-                    </ul>
-                }*/}
+
+                        />
+
+                    </Carousel.Item>
+
+                </Carousel>
+                </div>
 
                 <Footer/>
             </div>
@@ -96,7 +90,7 @@ function mapState(state) {
 const actionCreators = {
     getUsers: userActions.getAll,
     deleteUser: userActions.delete
-}
+};
 
 const connectedHomePage = connect(mapState, actionCreators)(HomePage);
 export { connectedHomePage as HomePage };
