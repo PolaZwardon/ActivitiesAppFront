@@ -66,19 +66,12 @@ export default class ProfilesManager extends Component {
                         userTypeId={this.state.userType}
                         userEmail={this.state.userEmail}
                         userId={this.state.userId}
-
                         />
                     </tr>
-
                     </tbody>
-
-
                 )
-
         }
-
     }
-
 }
 
 function mapState(state) {
