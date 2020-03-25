@@ -20,6 +20,7 @@ function login(username, password) {
                 user => { 
                     dispatch(success(user));
                     history.push('/');
+                    location.reload();
                 },
                 error => {
                     dispatch(failure(error.toString()));

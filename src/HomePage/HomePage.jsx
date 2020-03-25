@@ -80,7 +80,7 @@ class HomePage extends React.Component {
                             <Card.Subtitle class="section-information">
                                 <p>&emsp;Go to event page, click "Add Event", write a short description, choose time, place, how many people you are looking for and create your event! Just like that!</p>
                                 <p>&emsp;You can also choose one of categories to help others find your event. Write us if you are unable to find matching category, we are open to changes!</p>
-                                <p>&emsp;After someone join your event, we will let you know via email and send you emails to your all event participants. This way you will be able to discuss more details.</p>
+                                <p>&emsp;After someone joins your event, we will let you know via email and send you emails to your all event participants. This way you will be able to discuss more details.</p>
 
 
                             </Card.Subtitle>
@@ -90,7 +90,7 @@ class HomePage extends React.Component {
                             <Card.Subtitle class="section-information">
                                 <p>&emsp;If you are new in town, want to learn something new or just don't know what to do with your free time, check others events.</p>
                                 <p>&emsp;You don't have to take the initiative, just learn new skills from someone else, maybe you will discover your life passion!</p>
-                                <p>&emsp;After join event, we will send you an emails to the event creator. This way you will be able to discuss more details.</p>
+                                <p>&emsp;After joining an event, we will send you an email to the event creator. This way you will be able to discuss more details.</p>
 
 
                             </Card.Subtitle>
