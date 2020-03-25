@@ -90,7 +90,7 @@ class HomePage extends React.Component {
                             <Card.Subtitle class="section-information">
                                 <p>&emsp;If you are new in town, want to learn something new or just don't know what to do with your free time, check others events.</p>
                                 <p>&emsp;You don't have to take the initiative, just learn new skills from someone else, maybe you will discover your life passion!</p>
-                                <p>&emsp;After joining an event, we will send you an email to the event creator. This way you will be able to discuss more details.</p>
+                                <p>&emsp;After joining an event, we will send you an emaild to the event creator. This way you will be able to discuss more details.</p>
 
 
                             </Card.Subtitle>
