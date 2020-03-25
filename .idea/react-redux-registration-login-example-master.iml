@@ -2,8 +2,10 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/nodemailer" />
       <excludeFolder url="file://$MODULE_DIR$/node_modules/react-router" />
     </content>
+    <content url="file://$MODULE_DIR$/node_modules/nodemailer" />
     <content url="file://$MODULE_DIR$/node_modules/react-router" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

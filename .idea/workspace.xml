@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_services/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_services/email.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-redux-registration-login-example-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-redux-registration-login-example-master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_actions/user.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_actions/user.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_services" />
       <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -79,6 +86,7 @@
       <workItem from="1584302115389" duration="21352000" />
       <workItem from="1584610892189" duration="20338000" />
       <workItem from="1584958437035" duration="25618000" />
+      <workItem from="1585142498371" duration="1942000" />
     </task>
     <servers />
   </component>

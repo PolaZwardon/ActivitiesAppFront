@@ -2,6 +2,8 @@ import { userConstants } from '../_constants';
 import { userService } from '../_services';
 import { alertActions } from './';
 import { history } from '../_helpers';
+import { emailService } from "../_services/email.service";
+let loggedUser = JSON.parse(localStorage.getItem('user'));
 
 export const userActions = {
     login,
@@ -55,6 +57,7 @@ function register(user) {
                     dispatch(alertActions.error(error.toString()));
                 }
             );
+        emailService.sendEmail(loggedUser.email);
     };
 
     function request(user) { return { type: userConstants.REGISTER_REQUEST, user } }
