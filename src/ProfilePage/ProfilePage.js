@@ -17,14 +17,19 @@ import '../css/home.css';
 import '../css/profile.css';
 
 import ChangeUserNameForm from "../_components/ChangeUserNameForm";
+import {usersEventsService} from "../_services/userEvents.service";
+import UserEventList from "../_components/UserEventList";
 
+let user = JSON.parse(localStorage.getItem('user'));
 
 class ProfilePage extends React.Component {
-    /*
-        componentDidMount() {
-            this.props.getUsers();
-        }
-    */
+    constructor(props) {
+        super(props);
+    };
+/*        componentDidMount() {
+            this.props.getEvents(user.userId);
+        }*/
+
 
     /*    handleDeleteUser(id) {
             return (e) => this.props.deleteUser(id);
@@ -42,6 +47,7 @@ class ProfilePage extends React.Component {
                 <Card className="home-container">
                     <Card.Header class="home-header">
                         <h2>Edit your profile</h2>
+                        <h2>{this.props.usersEventsId}</h2>
                     </Card.Header>
                     <Card.Body class="contact-body">
                         <Card.Subtitle class="home-information">
@@ -96,8 +102,8 @@ function mapState(state) {
 }
 
 const actionCreators = {
-    getUsers: userActions.getAll,
-    deleteUser: userActions.delete
+/*    getEvents: usersEventsService.getEventsByParticipantId(),
+    getParticipants: usersEventsService.getParticipantsByEventId()*/
 }
 
 const connectedHomePage = connect(mapState, actionCreators)(ProfilePage);
