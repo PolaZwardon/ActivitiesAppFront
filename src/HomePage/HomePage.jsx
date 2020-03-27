@@ -6,10 +6,10 @@ import Image from 'react-bootstrap/Image'
 
 
 import { userActions } from '../_actions';
-import ProfileManagementBar from "../_components/ProfileManagementBar";
-import IconsBar from "../_components/IconsBar";
-import NavbarComponent from "../_components/NavbarComponent";
-import Footer from "../_components/Footer";
+import ProfileManagementBar from "../_components/navbars/ProfileManagementBar";
+import IconsBar from "../_components/header.footer/IconsBar";
+import NavbarComponent from "../_components/navbars/NavbarComponent";
+import Footer from "../_components/header.footer/Footer";
 import '../css/home.css';
 import '../css/navbar.css';
 import '../css/footer.css';

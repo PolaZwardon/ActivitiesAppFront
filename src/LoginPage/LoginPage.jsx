@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { history } from '../_helpers';
 
 import { userActions } from '../_actions';
-import IconsBar from "../_components/IconsBar";
-import Footer from "../_components/Footer";
+import IconsBar from "../_components/header.footer/IconsBar";
+import Footer from "../_components/header.footer/Footer";
 import '../css/navbar.css';
 
 import '../css/iconsBar.css';

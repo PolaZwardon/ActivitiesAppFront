@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from 'react-jsonschema-form';
 import axios from 'axios';
+import {history} from "../../_helpers";
 
 let user = JSON.parse(localStorage.getItem('user'));
 
@@ -39,6 +40,8 @@ export default class ChangeUserNameForm extends Component {
             console.log(res);
             console.log(res.data);
         });
+        history.push("/profile");
+        location.reload();
     };
 
     render() {

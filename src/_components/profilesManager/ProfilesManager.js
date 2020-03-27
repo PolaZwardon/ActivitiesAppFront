@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card } from 'react-bootstrap';
 import axios from "axios";
 import {connect} from "react-redux";
-import {userActions} from "../_actions";
-import EditProfile from "./EditProfile";
-import {history} from "../_helpers";
+import {userActions} from "../../_actions";
+import EditProfile from "../profilePage/EditProfile";
+import {history} from "../../_helpers";
 import {Modal} from "react-bootstrap";
 
 

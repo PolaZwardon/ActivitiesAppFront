@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Navbar from '../_components/NavbarComponent'
-import Footer from '../_components/Footer'
-import IconsBar from "../_components/IconsBar";
-import CreateEvent from "../_components/CreateEvent";
+import Navbar from '../_components/navbars/NavbarComponent'
+import Footer from '../_components/header.footer/Footer'
+import IconsBar from "../_components/header.footer/IconsBar";
+import CreateEvent from "../_components/allEventsPage/CreateEvent";
 
 
 import '../css/eventBox.css';
@@ -12,7 +12,7 @@ import '../css/iconsBar.css';
 import '../css/createevent.css';
 import {userActions} from "../_actions";
 import {connect} from "react-redux";
-import ProfileManagementBar from "../_components/ProfileManagementBar";
+import ProfileManagementBar from "../_components/navbars/ProfileManagementBar";
 
 class CreateEventpage extends Component {
     render()

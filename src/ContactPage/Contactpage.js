@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import NavbarComponent from '../_components/NavbarComponent'
-import Contact from '../_components/Contact'
-import Footer from "../_components/Footer";
-import IconsBar from "../_components/IconsBar";
+import NavbarComponent from '../_components/navbars/NavbarComponent'
+import Contact from '../_components/contactPage/Contact'
+import Footer from "../_components/header.footer/Footer";
+import IconsBar from "../_components/header.footer/IconsBar";
 
 
 import '../css/contact.css';
@@ -10,7 +10,7 @@ import '../css/navbar.css';
 import '../css/footer.css';
 import {userActions} from "../_actions";
 import {connect} from "react-redux";
-import ProfileManagementBar from "../_components/ProfileManagementBar";
+import ProfileManagementBar from "../_components/navbars/ProfileManagementBar";
 
 class Contactpage extends Component {
     render()

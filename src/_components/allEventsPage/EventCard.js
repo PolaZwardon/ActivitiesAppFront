@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Button, Card } from 'react-bootstrap';
-import {eventActions} from "../_actions/event.actions";
+import {eventActions} from "../../_actions/event.actions";
 import {connect} from "react-redux";
 let user = JSON.parse(localStorage.getItem('user'));
 

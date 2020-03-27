@@ -27,22 +27,21 @@ export default class NavbarComponent extends Component {
                 <link href="https://fonts.googleapis.com/css?family=Lobster|Krub&display=swap" rel="stylesheet"/>
 
 
-                <Navbar className="color-nav" variant="light" expand="lg"  >
-                    <Col xs={4} md={3}>
-                        <Navbar.Brand href="#home"><a>Menu</a></Navbar.Brand>
-                    </Col>
+                <Navbar className="color-nav"  variant="light" expand="lg"  >
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
-                                <Col xs={3} md={10}>
+                                <Col md="auto">
                                     <Nav.Link  href="/"><a>Home</a></Nav.Link>
                                 </Col>
-                                <Col xs={3} md={10}>
-                                    <Nav.Link href="/events"><a>Event</a></Nav.Link>
+                                <Col md="auto">
+                                    <Nav.Link href="/events"><a>Discover Events</a></Nav.Link>
                                 </Col>
-                                <Col xs={3} md={10}>
-                                    <Nav.Link href="/contact"><a>Contact</a></Nav.Link>
-                                </Col>
+                                <Col md="auto">
+                                <Nav.Link href="/contact"><a>Contact</a></Nav.Link>
+                            </Col>
+
                             </Nav>
                     </Navbar.Collapse>
                 </Navbar>

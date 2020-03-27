@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Image, Col } from 'react-bootstrap';
 
-const coffee = require('../img/006-coffee.png').default;
-const charity = require('../img/008-charity-3.png').default;
-const fastfood = require('../img/024-fast-food.png').default;
-const animals = require('../img/033-animals.png').default;
-const ball = require('../img/044-ball.png').default;
-const backpack = require('../img/026-backpack.png').default;
-const award = require('../img/030-award.png').default;
-const cocktail = require('../img/003-cocktail.png').default;
+const coffee = require('../../img/006-coffee.png').default;
+const charity = require('../../img/008-charity-3.png').default;
+const fastfood = require('../../img/024-fast-food.png').default;
+const animals = require('../../img/033-animals.png').default;
+const ball = require('../../img/044-ball.png').default;
+const backpack = require('../../img/026-backpack.png').default;
+const award = require('../../img/030-award.png').default;
+const cocktail = require('../../img/003-cocktail.png').default;
 
 export default class IconsBar extends Component {
 

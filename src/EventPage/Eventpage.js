@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import NavbarComponent from '../_components/NavbarComponent'
-import EventBoxes from '../_components/EventBoxes'
-import Footer from '../_components/Footer'
-import IconsBar from "../_components/IconsBar";
-import AddEventButton from "../_components/AddEventButton";
-import ProfileManagementBar from "../_components/ProfileManagementBar";
+import NavbarComponent from '../_components/navbars/NavbarComponent'
+import EventBoxes from '../_components/allEventsPage/EventBoxes'
+import Footer from '../_components/header.footer/Footer'
+import IconsBar from "../_components/header.footer/IconsBar";
+import AddEventButton from "../_components/allEventsPage/AddEventButton";
+import ProfileManagementBar from "../_components/navbars/ProfileManagementBar";
 
 import '../css/eventBox.css';
 import '../css/navbar.css';

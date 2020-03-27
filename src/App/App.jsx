@@ -16,6 +16,7 @@ import { ContactPage } from '../ContactPage';
 import {CreateEventpage} from "../CreateEventPage";
 import {ProfilesManagerPage} from "../ProfilesManagerPage";
 import {ProfilePage} from "../ProfilePage";
+import {MyEventsPage} from "../MyEventsPageAsParticipant/ProfilePage";
 
 
 class App extends React.Component {
@@ -50,6 +51,7 @@ class App extends React.Component {
                             <Route path="/contact" component={ContactPage} />
                             <Route path="/profile" component={ProfilePage} />
                             <Route path="/profiles" component={ProfilesManagerPage} />
+                            <Route path="/myEvents" component={MyEventsPage} />
                             <Route path="/CreateEventPage" component={CreateEventpage} />
                             <Redirect from="*" to="/" />
                         </Switch>

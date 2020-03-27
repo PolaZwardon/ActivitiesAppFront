@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Form from 'react-jsonschema-form';
 import axios from 'axios';
-import { history } from '../_helpers';
+import { history } from '../../_helpers';
 
 let user = JSON.parse(localStorage.getItem('user'));
 

@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MyEventsPageAsParticipant/ProfilePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyEventsPageAsParticipant/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContactPage/Contactpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactPage/Contactpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateEventPage/CreateEventpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateEventPage/CreateEventpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPage/Eventpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPage/Eventpage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfilesManagerPage/ProfilesManagerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfilesManagerPage/ProfilesManagerPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/AddEventButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/AddEventButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/ChangeUserNameForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilePage/ChangeUserNameForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/contactPage/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/CreateEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/CreateEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilePage/EditProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/EventBoxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventBoxes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/header.footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/IconsBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/header.footer/IconsBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/NavbarComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/navbars/NavbarComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/ProfileManagementBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/navbars/ProfileManagementBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilesManager/Profiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/ProfilesManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilesManager/ProfilesManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -42,21 +67,25 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MyEventsPage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\MyEventsPage" />
       <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\img" />
       <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src" />
       <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src\EventPage" />
       <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src\CreateEventPage" />
-      <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src\ContactPage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\header.footer" />
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\navbars" />
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\contactPage" />
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\profilePage" />
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\eventPage" />
     </key>
   </component>
   <component name="SvnConfiguration">

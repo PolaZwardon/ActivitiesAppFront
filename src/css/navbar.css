@@ -18,6 +18,10 @@ body {
     font-size: 20px;
     font-family: 'Krub', serif;
 }
+.mr-auto{
+    margin-left: 35vw;
+
+}
 @media only screen and (min-width: 845px) {
     #home{
         display: none

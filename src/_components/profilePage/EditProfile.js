@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import ProfilesManager from "./ProfilesManager";
+import ProfilesManager from "../profilesManager/ProfilesManager";
 import {Modal, Button} from "react-bootstrap";
 import Form from "react-jsonschema-form";
 let user = JSON.parse(localStorage.getItem('user'));

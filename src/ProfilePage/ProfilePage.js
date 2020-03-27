@@ -7,16 +7,16 @@ import Form from 'react-jsonschema-form';
 
 
 import { userActions } from '../_actions';
-import ProfileManagementBar from "../_components/ProfileManagementBar";
-import IconsBar from "../_components/IconsBar";
-import NavbarComponent from "../_components/NavbarComponent";
-import AddEventButton from "../_components/AddEventButton";
-import EventBoxes from "../_components/EventBoxes";
-import Footer from "../_components/Footer";
+import ProfileManagementBar from "../_components/navbars/ProfileManagementBar";
+import IconsBar from "../_components/header.footer/IconsBar";
+import NavbarComponent from "../_components/navbars/NavbarComponent";
+import AddEventButton from "../_components/allEventsPage/AddEventButton";
+import EventBoxes from "../_components/allEventsPage/EventBoxes";
+import Footer from "../_components/header.footer/Footer";
 import '../css/home.css';
 import '../css/profile.css';
 
-import ChangeUserNameForm from "../_components/ChangeUserNameForm";
+import ChangeUserNameForm from "../_components/profilePage/ChangeUserNameForm";
 
 
 class ProfilePage extends React.Component {
