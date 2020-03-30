@@ -38,7 +38,10 @@ export default class MyEventsList extends Component {
             username: this.state.email
         })*/
         axios.delete(`http://localhost:4321/api/Event/${eventId}/${userId}`,{
-            headers: {'Content-Type': 'application/json', accept: 'text/plain'}
+            headers: {'Content-Type': 'application/json'}.then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
         }).catch(function (error) {
             console.log(error.response);
         });
