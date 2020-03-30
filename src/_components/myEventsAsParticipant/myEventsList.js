@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Button, Card } from 'react-bootstrap';
 import {eventActions} from "../../_actions/event.actions";
 import {connect} from "react-redux";
+import EditProfile from "../profilePage/EditProfile";
 let user = JSON.parse(localStorage.getItem('user'));
 
 export default class MyEventsList extends Component {
@@ -12,6 +13,7 @@ export default class MyEventsList extends Component {
 
         this.state = {
             eventsList: "",
+            clicked: false,
 
         };
 
@@ -28,44 +30,49 @@ export default class MyEventsList extends Component {
 
     }
 
-    handleDeleteEvent(id) {
-        /*return (e) => this.props.deleteEvent(id);*/
-        axios.delete(`http://localhost:4321/api/Event/${id}`).then(res => {
-            console.log(res);
-            console.log(res.data);
+
+//TODO Naprawić 415 unsupported media type
+    handleDeleteEvent(eventId, userId) {
+/*        let eId = JSON.stringify({
+            password: this.state.password,
+            username: this.state.email
+        })*/
+        axios.delete(`http://localhost:4321/api/Event/${eventId}/${userId}`,{
+            headers: {'Content-Type': 'application/json', accept: 'text/plain'}
+        }).catch(function (error) {
+            console.log(error.response);
         });
-        location.reload();
+        // location.reload();
 
     }
-
-/*    handleJoinEvent(eventId, userId, currentParticipants, maxParticipants) {
-        if (currentParticipants < maxParticipants) {
-            /!*return (e) => this.props.deleteEvent(id);*!/
-            axios.post(`http://localhost:4321/api/Event/${eventId}/${userId}`, {
-                headers: {Content: "application/json"}
-            });
-            this.setState({button: "Leave"});
-            location.reload();
-
-        }
-
-        //patch dodajacy +1 uzytkownika do eventu
-        /!*        axios.patch(`http://localhost:4321/api/Event/${eventId}/`).then(res => {
-                    console.log(res);
-                    console.log(res.data);
-                })*!/
-    }*/
 
 
     render() {
-        return (
-            <div>
-                <h1>{this.props.myEventId}</h1>
-                <p>{this.state.eventsList.eventName}</p>
-            </div>
+        if(user.userid = this.props.userId){
+         return (
+                <tbody>
+                <tr>
+                    <td>{this.state.eventsList.eventName}</td>
+                    <td>{this.state.eventsList.eventDescription}</td>
+                    <td>{this.state.eventsList.eventPlace}</td>
+                    <td>{this.state.eventsList.eventDate}</td>
+                    <td>{this.state.eventsList.currentEventParticipants}</td>
+                    <td>{this.state.eventsList.maxEventParticipants}</td>
 
-        )
-    }
+                    <Button variant="info" onClick={(e) => this.handleDeleteEvent(this.state.eventsList.eventId, user.userId, e)}>Leave
+                    </Button>{' '}
+
+                </tr>
+
+                </tbody>
+
+            )}
+    else {
+        <div>
+            <h2>No events to show</h2>
+        </div>
+        }}
+
 }
     function
 

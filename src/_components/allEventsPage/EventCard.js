@@ -37,22 +37,37 @@ export default class EventCard extends Component {
         location.reload();
 
     }
-    handleJoinEvent(eventId, userId, currentParticipants, maxParticipants) {
+    handleJoinEvent(eventId, userId, currentParticipants, maxParticipants, categoryId, eventDate, eventPlace, eventDescription, eventName) {
         if(currentParticipants<maxParticipants){
             /*return (e) => this.props.deleteEvent(id);*/
             axios.post(`http://localhost:4321/api/Event/${eventId}/${userId}`, {
                 headers: {Content: "application/json"}
             });
             this.setState({button: "Leave"});
-            location.reload();
 
-        }
+        }//TODO Naprawić 415 unsupported media type
 
-        //patch dodajacy +1 uzytkownika do eventu
-/*        axios.patch(`http://localhost:4321/api/Event/${eventId}/`).then(res => {
+        let cParticipants = currentParticipants+1;
+/*        let dataJson = JSON.stringify({
+            currentEventParticipants: cParticipants});*/        //patch dodajacy +1 uzytkownika do eventu
+        axios.patch(`http://localhost:4321/api/Event/${eventId}`, {eventName: eventName,
+            eventDescription: eventDescription,
+            eventPlace: eventPlace,
+            eventDate: eventDate,
+            categoryId: categoryId,
+            currentEventParticipants: cParticipants,
+            maxEventParticipants: maxParticipants},{
+            headers: {'Content-Type': 'application/json'}}
+        ).then(res => {
             console.log(res);
             console.log(res.data);
-        })*/
+        }).catch(function (error) {
+            console.log(error.response);
+        });
+/*
+        location.reload();
+*/
+
     }
 
 
@@ -74,7 +89,7 @@ export default class EventCard extends Component {
                         <Card.Text>
                             {this.props.eventPlace}
                         </Card.Text>
-                        <Button href="/events" onClick={(e) => this.handleJoinEvent(this.props.eventId, user.userId, this.props.currentParticipants, this.props.maxParticipants, e)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>{this.state.button}</Button>
+                        <Button  onClick={(e) => this.handleJoinEvent(this.props.eventId, user.userId, this.props.currentParticipants, this.props.maxParticipants, this.props.categoryId, this.props.eventDate, this.props.eventPlace, this.props.eventDescription, this.props.eventName, e)} id="join-button" variant="primary" style={{background: "#8fa0ad", border: "#8fa0ad"}}>{this.state.button}</Button>
                     </Card.Body>
                     <Card.Footer className="text-mute" class="eventbox-footer">{this.props.eventDate}</Card.Footer>
                 </Card>

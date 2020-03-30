@@ -27,6 +27,7 @@ export default class MyEvent extends Component {
             this.state.eventList.map(event =>
                 <MyEventsList
                 myEventId = {event.eventId}
+                userId={event.userId}
                 />
                 
             )

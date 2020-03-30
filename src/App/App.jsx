@@ -16,7 +16,7 @@ import { ContactPage } from '../ContactPage';
 import {CreateEventpage} from "../CreateEventPage";
 import {ProfilesManagerPage} from "../ProfilesManagerPage";
 import {ProfilePage} from "../ProfilePage";
-import {MyEventsPage} from "../MyEventsPageAsParticipant/ProfilePage";
+import {MyEventsPage} from "../MyEventsPageAsParticipant/MyEventsPage";
 
 
 class App extends React.Component {

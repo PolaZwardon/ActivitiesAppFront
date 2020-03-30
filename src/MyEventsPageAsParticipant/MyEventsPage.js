@@ -18,6 +18,8 @@ import '../css/profile.css';
 
 import ChangeUserNameForm from "../_components/profilePage/ChangeUserNameForm";
 import MyEvent from "../_components/myEventsAsParticipant/myEvent";
+import Table from "react-bootstrap/Table";
+import Profiles from "../_components/profilesManager/Profiles";
 
 
 class MyEventsPage extends React.Component {
@@ -36,12 +38,38 @@ class MyEventsPage extends React.Component {
         const { user, users } = this.props;
         return (
 
-            <div class="home-card">
-                <ProfileManagementBar/>
-                <IconsBar/>
-                <NavbarComponent/>
-                <MyEvent/>
-                <Footer/>
+            <div id="page">
+                <div id="container-wrap">
+                    <ProfileManagementBar/>
+                    <IconsBar/>
+                    <NavbarComponent/>
+                    <div className="contact-card">
+                        <Card className="contact-container">
+
+                            <Card.Header class="contact-header">
+                                <h2>Joined Events</h2>
+                            </Card.Header>
+                        </Card>
+                    </div>
+                    <Card className="profile-card">
+                        <Table striped bordered hover>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Place</th>
+                                <th>Date</th>
+                                <th>Current</th>
+                                <th>Max</th>
+                                <th> </th>
+
+                            </tr>
+                            </thead>
+                            <MyEvent/>
+                        </Table>
+                    </Card>
+                    <Footer/>
+                </div>
             </div>
         );
     }

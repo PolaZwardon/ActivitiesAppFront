@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MyEventsPageAsParticipant/ProfilePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyEventsPageAsParticipant/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEvent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContactPage/Contactpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContactPage/Contactpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateEventPage/CreateEventpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateEventPage/CreateEventpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPage/Eventpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPage/Eventpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage/LoginPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfilePage/ProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProfilesManagerPage/ProfilesManagerPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProfilesManagerPage/ProfilesManagerPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/AddEventButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/AddEventButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/ChangeUserNameForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilePage/ChangeUserNameForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/contactPage/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/CreateEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/CreateEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilePage/EditProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EventBoxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventBoxes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/header.footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/IconsBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/header.footer/IconsBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/NavbarComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/navbars/NavbarComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/ProfileManagementBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/navbars/ProfileManagementBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilesManager/Profiles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/ProfilesManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilesManager/ProfilesManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyEventsPageAsParticipant/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyEventsPageAsParticipant/MyEventsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +46,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MyEventsPage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
@@ -108,6 +87,8 @@
       <workItem from="1584302115389" duration="21352000" />
       <workItem from="1584610892189" duration="20338000" />
       <workItem from="1584958437035" duration="25618000" />
+      <workItem from="1585504385163" duration="9432000" />
+      <workItem from="1585571520439" duration="3286000" />
     </task>
     <servers />
   </component>
@@ -152,11 +133,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584374273012" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1585094958137">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585514813916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/236.-768.1360.728@0.0.1536.824" timestamp="1585076810405" />
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585094958137" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585514813916" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585070152479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
