@@ -37,46 +37,49 @@ export default class EventCard extends Component {
         location.reload();
 
     }
+
+    handleButtonActions(){
+        if(this.props.currentEventParticipants===this.props.maxEventParticipants) {
+            this.setState({button: "Cannot join"})
+        }
+}
+
     handleJoinEvent(eventId, userId, currentParticipants, maxParticipants, categoryId, eventDate, eventPlace, eventDescription, eventName) {
         if(currentParticipants<maxParticipants){
-            /*return (e) => this.props.deleteEvent(id);*/
             axios.post(`http://localhost:4321/api/Event/${eventId}/${userId}`, {
                 headers: {Content: "application/json"}
             });
-            this.setState({button: "Leave"});
-
-        }//TODO Naprawić 415 unsupported media type
-
-        let cParticipants = currentParticipants+1;
-/*        let dataJson = JSON.stringify({
-            currentEventParticipants: cParticipants});*/        //patch dodajacy +1 uzytkownika do eventu
-        axios.patch(`http://localhost:4321/api/Event/${eventId}`, {eventName: eventName,
-            eventDescription: eventDescription,
-            eventPlace: eventPlace,
-            eventDate: eventDate,
-            categoryId: categoryId,
-            currentEventParticipants: cParticipants,
-            maxEventParticipants: maxParticipants},{
-            headers: {'Content-Type': 'application/json'}}
-        ).then(res => {
-            console.log(res);
-            console.log(res.data);
-        }).catch(function (error) {
-            console.log(error.response);
-        });
-/*
-        location.reload();
-*/
-
+            let cParticipants = currentParticipants+1;
+            /*        let dataJson = JSON.stringify({
+                        currentEventParticipants: cParticipants});*/        //patch dodajacy +1 uzytkownika do eventu
+            axios.patch(`http://localhost:4321/api/Event/${eventId}`, {eventName: eventName,
+                eventDescription: eventDescription,
+                eventPlace: eventPlace,
+                eventDate: eventDate,
+                categoryId: categoryId,
+                currentEventParticipants: cParticipants,
+                maxEventParticipants: maxParticipants},{
+                headers: {'Content-Type': 'application/json'}}
+            ).then(res => {
+                console.log(res);
+                console.log(res.data);
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+            location.reload();
+        }
     }
 
-
     render() {
+
         if (user.userTypeId === 1&&user.userId!==this.props.userId) {
+/*
+            {this.handleButtonActions()}
+*/
 
-        return (
-
+                return (
         <div className="cards">
+
             <Card className="text-center">
                 <Card.Header class="box-header" id={`cat${this.state.category.categoryName}`}>{this.props.eventName}</Card.Header>
                     <Card.Body class="card-body">
