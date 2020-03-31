@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/contact.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/coronavirus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_components/header.footer/InformationBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsCreator/myOwnEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsCreator/myOwnEventsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/informationBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/contactPage/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/contactPage/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -47,7 +47,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_components/myEventsAsCreator" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
@@ -61,11 +61,11 @@
       <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\eventPage" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\_components\myEventsAsCreator" />
       <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\css" />
       <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\MyEventsPage" />
       <recent name="C:\Users\Pola praca\Documents\GitHub\ActivitiesAppFront\src\img" />
       <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src" />
-      <recent name="C:\Users\Pola praca\Desktop\Codecool\user_registration\react-redux-registration-login-example-master\src\EventPage" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -90,7 +90,7 @@
       <workItem from="1584958437035" duration="25618000" />
       <workItem from="1585504385163" duration="9432000" />
       <workItem from="1585571520439" duration="19489000" />
-      <workItem from="1585645314691" duration="9781000" />
+      <workItem from="1585645314691" duration="16627000" />
     </task>
     <servers />
   </component>

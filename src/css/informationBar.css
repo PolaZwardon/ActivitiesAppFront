@@ -1,0 +1,53 @@
+.information-bar{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 60px;
+    background-color: #333333;
+    margin-top: -17px;
+    font-size: 15px;
+
+}
+.logo-information-bar h3{
+    color: white;
+    font-size: 20px;
+    font-family: Krub;
+    margin-left: 45px;
+    position: absolute;
+    bottom: 4px;
+}
+
+@media only screen and (max-width: 1079px) {
+
+    .logo-information-bar p {
+        display: none;
+    }
+}
+
+.logo-information-bar p{
+    color: white;
+    font-size: 1.3vw;
+    font-family: Krub;
+    text-align: center;
+    font-weight: lighter;
+    position: relative;
+    bottom:70px
+}
+
+.img-info-bar{
+    display:inline-block;
+    position: relative;
+    left: 28px;
+    top:2px
+}
+.button-information-bar{
+    float:right;
+    display:inline-block;
+    position: absolute;
+    right: 40px;
+    bottom:-5px;
+}
+.button-information-bar #bg-nested-dropdown{
+    background-color: rgba(233,11,88,0.69) !important;
+}

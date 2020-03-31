@@ -13,6 +13,9 @@ import Footer from "../_components/header.footer/Footer";
 import '../css/home.css';
 import '../css/navbar.css';
 import '../css/footer.css';
+import '../css/informationBar.css';
+
+import InformationBar from "../_components/header.footer/InformationBar";
 
 const community1 = require('../img/join.png').default;
 const community2 = require('../img/multicultural1.png').default;
@@ -28,6 +31,7 @@ class HomePage extends React.Component {
                 <ProfileManagementBar/>
                 <IconsBar/>
                 <NavbarComponent/>
+                <InformationBar/>
                 <Card.Header class="homePage-header">
                     <h2>Let's get to know each other!</h2>
                 </Card.Header>
