@@ -14,7 +14,6 @@ export default class MyEventsList extends Component {
         this.state = {
             eventsList: "",
             clicked: false,
-
         };
 
         this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
@@ -27,28 +26,35 @@ export default class MyEventsList extends Component {
                 this.setState({eventsList: eventsList});
 
             });
-
     }
-
-
-//TODO Naprawić 415 unsupported media type
     handleDeleteEvent(eventId, userId) {
-/*        let eId = JSON.stringify({
-            password: this.state.password,
-            username: this.state.email
-        })*/
-        axios.delete(`http://localhost:4321/api/Event/${eventId}/${userId}`,{
-            headers: {'Content-Type': 'application/json'}.then(res => {
+
+        axios.delete(`http://localhost:4321/api/Event/${eventId}/${userId}`,
+            {headers: {'Content-Type': 'application/json','Accept': 'text/plain'}}).then(res => {
                 console.log(res);
                 console.log(res.data);
-            })
+            }).catch(function (error) {
+                console.log(error.response);
+            });
+        let cParticipants = this.state.eventsList.currentEventParticipants-1;
+
+        axios.patch(`http://localhost:4321/api/Event/${eventId}`, {eventName: this.state.eventsList.eventName,
+            eventDescription: this.state.eventsList.eventDescription,
+            eventPlace: this.state.eventsList.eventPlace,
+            eventDate: this.state.eventsList.eventDate,
+            categoryId: this.state.eventsList.categoryId,
+            currentEventParticipants: cParticipants,
+            maxEventParticipants: this.state.eventsList.maxEventParticipants},{
+            headers: {'Content-Type': 'application/json; charset=utf-8' ,'Accept': 'application/json'}}
+        ).then(res => {
+            console.log(res);
+            console.log(res.data);
         }).catch(function (error) {
             console.log(error.response);
         });
-        // location.reload();
+        location.reload();
 
     }
-
 
     render() {
         if(user.userid = this.props.userId){

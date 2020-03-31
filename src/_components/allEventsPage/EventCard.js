@@ -110,7 +110,7 @@ export default class EventCard extends Component {
                 categoryId: categoryId,
                 currentEventParticipants: cParticipants,
                 maxEventParticipants: maxParticipants},{
-                headers: {'Content-Type': 'application/json'}}
+                headers: {'Content-Type': 'application/json; charset=utf-8' ,'Accept': 'application/json'}}
             ).then(res => {
                 console.log(res);
                 console.log(res.data);
