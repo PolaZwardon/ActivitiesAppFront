@@ -4,7 +4,6 @@
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,8 @@
       <workItem from="1584610892189" duration="20338000" />
       <workItem from="1584958437035" duration="25618000" />
       <workItem from="1585504385163" duration="9432000" />
-      <workItem from="1585571520439" duration="18789000" />
+      <workItem from="1585571520439" duration="19489000" />
+      <workItem from="1585645314691" duration="1095000" />
     </task>
     <servers />
   </component>

@@ -117,9 +117,7 @@ export default class EventCard extends Component {
             }).catch(function (error) {
                 console.log(error.response);
             })}
-/*
             location.reload();
-*/
         }
     }
 
