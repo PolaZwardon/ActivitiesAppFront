@@ -13,7 +13,7 @@ export default class Profiles extends Component {
     };
 
     componentDidMount() {
-        axios.get(`http://localhost:4321/api/User`)
+        axios.get(`http://localhost:4321/user`)
             .then(res => {
                 const profilesList = res.data;
                 this.setState({profilesList});

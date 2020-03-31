@@ -15,7 +15,7 @@ function getAll() {
         headers: eventHeader()
     };
 
-    return fetch(`${config.apiUrl}/api/Event`, requestOptions).then(handleResponse);
+    return fetch(`${config.apiUrl}/event`, requestOptions).then(handleResponse);
 }
 
 function getById(id) {
@@ -24,7 +24,7 @@ function getById(id) {
         headers: eventHeader()
     };
 
-    return fetch(`${config.apiUrl}/api/Event/${id}`, requestOptions).then(handleResponse);
+    return fetch(`${config.apiUrl}/event/${id}`, requestOptions).then(handleResponse);
 }
 
 function add(event) {
@@ -34,7 +34,7 @@ function add(event) {
         body: JSON.stringify(event)
     };
 
-    return fetch(`${config.apiUrl}/api/Event/`, requestOptions).then(handleResponse);
+    return fetch(`${config.apiUrl}/event/`, requestOptions).then(handleResponse);
 }
 
 function update(event) {
@@ -44,7 +44,7 @@ function update(event) {
         body: JSON.stringify(event)
     };
 
-    return fetch(`${config.apiUrl}/api/Event/${event.id}`, requestOptions).then(handleResponse);;
+    return fetch(`${config.apiUrl}/event/${event.id}`, requestOptions).then(handleResponse);;
 }
 
 // prefixed function name with underscore because delete is a reserved word in javascript
@@ -54,7 +54,7 @@ function _delete(id) {
         headers: eventHeader()
     };
 
-    return fetch(`${config.apiUrl}/api/Event/${id}`, requestOptions).then(handleResponse);
+    return fetch(`${config.apiUrl}/event/${id}`, requestOptions).then(handleResponse);
 }
 
 function handleResponse(response) {

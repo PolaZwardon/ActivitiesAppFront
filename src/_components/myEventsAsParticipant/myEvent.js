@@ -13,7 +13,7 @@ export default class MyEvent extends Component {
 
 
     componentDidMount() {
-        axios.get(`http://localhost:4321/api/Event/geteventsbyparticipantsId/${user.userId}`)
+        axios.get(`http://localhost:4321/event/geteventsbyparticipantsId/${user.userId}`)
             .then(res => {
                 const eventList = res.data;
                 this.setState({eventList});

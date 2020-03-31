@@ -13,7 +13,7 @@ export default class EventBoxes extends Component {
 
 
     componentDidMount() {
-        axios.get(`http://localhost:4321/api/Event`)
+        axios.get(`http://localhost:4321/event`)
             .then(res => {
                 const eventList = res.data;
                 this.setState({eventList});

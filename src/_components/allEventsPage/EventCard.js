@@ -8,7 +8,7 @@ let user = JSON.parse(localStorage.getItem('user'));
 export default class EventCard extends Component {
 
     constructor(props) {
-        axios.get(`http://localhost:4321/api/Event/geteventsbyparticipantsId/${user.userId}`)
+        axios.get(`http://localhost:4321/event/geteventsbyparticipantsId/${user.userId}`)
             .then(res => {
                 const eventsList = res.data;
                 this.setState({eventsList: eventsList});
@@ -75,7 +75,7 @@ export default class EventCard extends Component {
 
     handleDeleteEvent(id) {
         /*return (e) => this.props.deleteEvent(id);*/
-        axios.delete(`http://localhost:4321/api/Event/${id}`).then(res => {
+        axios.delete(`http://localhost:4321/event/${id}`).then(res => {
             console.log(res);
             console.log(res.data);
         });
@@ -92,7 +92,7 @@ export default class EventCard extends Component {
     handleJoinEvent(eventId, userId, currentParticipants, maxParticipants, categoryId, eventDate, eventPlace, eventDescription, eventName) {
 
         if(currentParticipants<maxParticipants){
-            axios.post(`http://localhost:4321/api/Event/${eventId}/${userId}`, {
+            axios.post(`http://localhost:4321/event/joinevent/${eventId}/${userId}`, {
                 headers: {Content: "application/json"}
             }).then(res => {
                 console.log(res);
@@ -103,7 +103,7 @@ export default class EventCard extends Component {
             if(this.checkIfUserCanJoinEvent(eventId)){
             let cParticipants = currentParticipants+1;
 
-            axios.patch(`http://localhost:4321/api/Event/${eventId}`, {eventName: eventName,
+            axios.patch(`http://localhost:4321/event/${eventId}`, {eventName: eventName,
                 eventDescription: eventDescription,
                 eventPlace: eventPlace,
                 eventDate: eventDate,

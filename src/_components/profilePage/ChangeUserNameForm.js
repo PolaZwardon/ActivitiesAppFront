@@ -36,7 +36,7 @@ export default class ChangeUserNameForm extends Component {
         formData.email=user.email;
         formData.userTypeId=user.userTypeId;
 
-        axios.patch(`http://localhost:4321/api/User/${user.userId}`, formData).then(res => {
+        axios.patch(`http://localhost:4321/user/${user.userId}`, formData).then(res => {
             console.log(res);
             console.log(res.data);
         });

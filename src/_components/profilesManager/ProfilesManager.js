@@ -30,7 +30,7 @@ export default class ProfilesManager extends Component {
 
     }
     handleDeleteUser(id) {
-        axios.delete(`http://localhost:4321/api/User/${id}`).then(res => {
+        axios.delete(`http://localhost:4321/user/${id}`).then(res => {
             console.log(res);
             console.log(res.data);
         })

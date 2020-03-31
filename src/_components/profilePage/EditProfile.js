@@ -34,7 +34,7 @@ export default class EditProfile extends Component {
     handleSubmit({formData}) {
 /*        formData.email=this.props.userEmail;
         formData.userTypeId=this.props.userTypeId;*/
-        axios.patch(`http://localhost:4321/api/User/${this.props.userId}`, formData).then(res => {
+        axios.patch(`http://localhost:4321/user/${this.props.userId}`, formData).then(res => {
             console.log(res);
             console.log(res.data);
         });

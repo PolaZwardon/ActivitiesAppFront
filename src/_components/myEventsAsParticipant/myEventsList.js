@@ -20,7 +20,7 @@ export default class MyEventsList extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:4321/api/Event/${this.props.myEventId}`)
+        axios.get(`http://localhost:4321/event/${this.props.myEventId}`)
             .then(res => {
                 const eventsList = res.data;
                 this.setState({eventsList: eventsList});
@@ -29,7 +29,7 @@ export default class MyEventsList extends Component {
     }
     handleDeleteEvent(eventId, userId) {
 
-        axios.delete(`http://localhost:4321/api/Event/${eventId}/${userId}`,
+        axios.delete(`http://localhost:4321/event/removeparticipant/${eventId}/${userId}`,
             {headers: {'Content-Type': 'application/json','Accept': 'text/plain'}}).then(res => {
                 console.log(res);
                 console.log(res.data);
@@ -38,7 +38,7 @@ export default class MyEventsList extends Component {
             });
         let cParticipants = this.state.eventsList.currentEventParticipants-1;
 
-        axios.patch(`http://localhost:4321/api/Event/${eventId}`, {eventName: this.state.eventsList.eventName,
+        axios.patch(`http://localhost:4321/event/${eventId}`, {eventName: this.state.eventsList.eventName,
             eventDescription: this.state.eventsList.eventDescription,
             eventPlace: this.state.eventsList.eventPlace,
             eventDate: this.state.eventsList.eventDate,

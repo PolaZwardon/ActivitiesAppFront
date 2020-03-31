@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_components/header.footer/InformationBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsCreator/myOwnEvent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_components/myEventsAsCreator/myOwnEventsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/informationBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/CreateEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/CreateEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/EventBoxes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventBoxes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/myEventsAsParticipant/myEventsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/profilePage/ChangeUserNameForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilePage/ChangeUserNameForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/profilePage/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilePage/EditProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/profilesManager/Profiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilesManager/Profiles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/profilesManager/ProfilesManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/profilesManager/ProfilesManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_services/event.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/event.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
       <workItem from="1584958437035" duration="25618000" />
       <workItem from="1585504385163" duration="9432000" />
       <workItem from="1585571520439" duration="19489000" />
-      <workItem from="1585645314691" duration="16627000" />
+      <workItem from="1585645314691" duration="20077000" />
     </task>
     <servers />
   </component>

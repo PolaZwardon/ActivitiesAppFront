@@ -139,14 +139,14 @@ export default class CreateEvent extends Component {
     handleSubmit({formData}) {
         formData.UserId=user.userId;
 
-        axios.post('http://localhost:4321/api/Event', formData);
+        axios.post('http://localhost:4321/event', formData);
 
         history.push("/events");
         location.reload();
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:4321/api/Category`)
+        axios.get(`http://localhost:4321/category`)
             .then(res => {
                 const categories = res.data;
                 this.setState({categories: categories});
