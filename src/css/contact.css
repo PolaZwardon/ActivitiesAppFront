@@ -1,5 +1,7 @@
 
-
+.contact-body{
+    height: 300px;
+}
 .contact-information li{
     font-size: 17px;
     text-align: center;
@@ -15,8 +17,23 @@
     margin-bottom: 20px;
 }
 .contact-information ul {
-    margin-top: 10px;
+    margin-top: 25px;
     padding:0px;
+
+}
+.contact-information h3 {
+    margin-top: 40px;
+    padding:0px;
+    font-family: Krub, Serif;
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.img-responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-header{

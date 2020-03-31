@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card } from 'react-bootstrap';
+import {Button, Card, Image} from 'react-bootstrap';
+
+const mail = require('../../img/contact.png').default;
+const phone = require('../../img/phone.png').default;
+const office = require('../../img/house.png').default;
 
 export default class Contact extends Component {
 
@@ -16,9 +20,13 @@ export default class Contact extends Component {
                 <Card.Body class="contact-body">
                     <Card.Subtitle class="contact-information">
                         <ul>
-                            <li>email: meetandfun@info.com</li>
+                            <Image className="img-responsive" src={mail} alt={"award"} width='30px' height='30px'/>
+                            <li>email: good2meet.info@gmail.com</li>
+                            <Image className="img-responsive" src={phone} alt={"award"} width='30px' height='30px' />
                             <li>tel: +48 934 382 400</li>
-                            <li>office: Codecool, Krakow</li>
+                            <Image className="img-responsive" src={office} alt={"award"} width='30px' height='30px' />
+                            <li>office: Krakow</li>
+                            <h3>If you have any questions or suggestions, don't hesitate to contact us!</h3>
 
                         </ul>
                   </Card.Subtitle>
