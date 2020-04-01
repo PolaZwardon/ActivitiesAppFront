@@ -12,6 +12,7 @@ import '../css/footer.css';
 import '../css/iconsBar.css';
 import {userActions} from "../_actions";
 import {connect} from "react-redux";
+import InformationBar from "../_components/header.footer/InformationBar";
 
 
 class Eventpage extends Component {
@@ -34,6 +35,7 @@ class Eventpage extends Component {
                     <ProfileManagementBar/>
                     <IconsBar/>
                     <NavbarComponent/>
+                    
                     <AddEventButton/>
                     <EventBoxes/>
                     <Footer/>

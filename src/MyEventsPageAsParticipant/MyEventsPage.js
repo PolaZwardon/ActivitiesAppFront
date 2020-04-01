@@ -20,6 +20,7 @@ import ChangeUserNameForm from "../_components/profilePage/ChangeUserNameForm";
 import MyEvent from "../_components/myEventsAsParticipant/myEvent";
 import Table from "react-bootstrap/Table";
 import Profiles from "../_components/profilesManager/Profiles";
+import InformationBar from "../_components/header.footer/InformationBar";
 
 
 class MyEventsPage extends React.Component {
@@ -43,6 +44,7 @@ class MyEventsPage extends React.Component {
                     <ProfileManagementBar/>
                     <IconsBar/>
                     <NavbarComponent/>
+                    <InformationBar/>
                     <div className="contact-card">
                         <Card className="contact-container">
 

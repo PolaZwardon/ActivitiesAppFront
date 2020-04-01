@@ -11,6 +11,7 @@ import '../css/footer.css';
 import {userActions} from "../_actions";
 import {connect} from "react-redux";
 import ProfileManagementBar from "../_components/navbars/ProfileManagementBar";
+import InformationBar from "../_components/header.footer/InformationBar";
 
 class Contactpage extends Component {
     render()
@@ -22,6 +23,7 @@ class Contactpage extends Component {
                     <ProfileManagementBar/>
                     <IconsBar/>
                     <NavbarComponent/>
+                    <InformationBar/>
                     <Contact/>
                     <Footer/>
                 </div>

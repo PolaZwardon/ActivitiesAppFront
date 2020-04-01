@@ -17,6 +17,7 @@ import '../css/home.css';
 import '../css/profile.css';
 
 import ChangeUserNameForm from "../_components/profilePage/ChangeUserNameForm";
+import InformationBar from "../_components/header.footer/InformationBar";
 
 
 class ProfilePage extends React.Component {
@@ -39,6 +40,7 @@ class ProfilePage extends React.Component {
                 <ProfileManagementBar/>
                 <IconsBar/>
                 <NavbarComponent/>
+                <InformationBar/>
                 <Card className="home-container">
                     <Card.Header class="home-header">
                         <h2>Edit your profile</h2>

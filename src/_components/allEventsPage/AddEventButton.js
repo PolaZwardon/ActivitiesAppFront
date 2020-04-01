@@ -8,7 +8,7 @@ export default class AddEventButton extends Component {
         return (
 
             <div class="add-event-container">
-                <Button id="add-event-button" href="/CreateEventpage" variant="primary" >Add Event</Button>
+                <Button id="add-event-button" href="/CreateEventPage" variant="primary" >Add Event</Button>
             </div>
         )
     }
