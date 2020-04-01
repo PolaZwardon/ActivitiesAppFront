@@ -1,8 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link, Router} from 'react-router-dom';
 import { connect } from 'react-redux';
+import { history } from '../_helpers';
 
 import { userActions } from '../_actions';
+import IconsBar from "../_components/header.footer/IconsBar";
+import Footer from "../_components/header.footer/Footer";
+import '../css/registerPage.css';
+import '../css/iconsBar.css';
+import '../css/iconsBar.css';
+import '../css/footer.css';
+const community1 = require('../img/join.png').default;
 
 class RegisterPage extends React.Component {
     constructor(props) {
@@ -47,7 +55,15 @@ class RegisterPage extends React.Component {
         const { registering  } = this.props;
         const { user, submitted } = this.state;
         return (
-            <div className="col-md-6 col-md-offset-3">
+            <div>
+            <div className="upperline">-</div>
+
+            <IconsBar/>
+                <div className="underline">-</div>
+
+                <div className="registerpage-container">
+
+                    <div className="register-container">
                 <h2>Register</h2>
                 <form name="form" onSubmit={this.handleSubmit}>
 
@@ -82,7 +98,11 @@ class RegisterPage extends React.Component {
                         <Link to="/login" className="btn btn-link">Cancel</Link>
                     </div>
                 </form>
+                    </div>
+                <Footer/>
+                </div>
             </div>
+
         );
     }
 }

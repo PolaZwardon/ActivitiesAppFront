@@ -35,7 +35,7 @@ class Eventpage extends Component {
                     <ProfileManagementBar/>
                     <IconsBar/>
                     <NavbarComponent/>
-                    
+
                     <AddEventButton/>
                     <EventBoxes/>
                     <Footer/>
