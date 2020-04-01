@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b859d14b-56e7-485c-bc84-82a681a81594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/registerPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPage/Eventpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPage/Eventpage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegisterPage/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/CreateEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/CreateEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/allEventsPage/EventCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/eventBox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/eventBox.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1585504385163" duration="9432000" />
       <workItem from="1585571520439" duration="19489000" />
       <workItem from="1585645314691" duration="20658000" />
-      <workItem from="1585737894391" duration="2055000" />
+      <workItem from="1585737894391" duration="5230000" />
     </task>
     <servers />
   </component>

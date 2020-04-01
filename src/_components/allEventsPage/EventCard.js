@@ -29,7 +29,7 @@ export default class EventCard extends Component {
     }
     componentDidMount() {
 
-        axios.get(`http://localhost:4321/api/Category/${this.props.categoryId}`)
+        axios.get(`http://localhost:4321/category/${this.props.categoryId}`)
             .then(res => {
                 const category = res.data;
                 this.setState({category: category});

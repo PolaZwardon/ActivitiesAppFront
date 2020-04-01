@@ -104,6 +104,27 @@ const mySchema ={
                     ],
                     "title": "Eating out"
                 },
+                {
+                    "type": "integer",
+                    "enum": [
+                        11
+                    ],
+                    "title": "Charity"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        12
+                    ],
+                    "title": "Education"
+                },
+                {
+                    "type": "integer",
+                    "enum": [
+                        13
+                    ],
+                    "title": "Offer"
+                },
             ]
         },
         "maxEventParticipants": {

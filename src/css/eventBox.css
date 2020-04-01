@@ -13,16 +13,16 @@
 #catLifestyle{
     background-color: rgba(145,69,155,0.26);
 }
-#catSport, #catEating{
+#catSport, #catEating, #catCharity{
     background-color: rgba(97,161,69,0.26);
 }
-#catMusic, #catFun{
+#catFun, #catEducation{
     background-color: bisque;
 }
-#catHobbies{
+#catHobbies, #catOffer{
     background-color: rgba(211,191,126,0.59);
 }
-#catOutdoor, #catTravel{
+#catOutdoor, #catTravel, #catMusic{
     background-color: rgba(121,211,169,0.59);
 }
 
