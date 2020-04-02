@@ -27,6 +27,7 @@ export default class MyEventsList extends Component {
 
             });
     }
+
     handleDeleteEvent(eventId, userId) {
 
         axios.delete(`http://localhost:4321/event/removeparticipant/${eventId}/${userId}`,
@@ -52,7 +53,14 @@ export default class MyEventsList extends Component {
         }).catch(function (error) {
             console.log(error.response);
         });
+        setTimeout(function () {
+
+                window.location.reload(1);
+            
+        }, 3000);
+/*
         location.reload();
+*/
 
     }
 

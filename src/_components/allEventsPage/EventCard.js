@@ -38,7 +38,7 @@ export default class EventCard extends Component {
 
     }
 
-    checkIfUserCanJoinEvent(eventId){
+        checkIfUserCanJoinEvent(eventId){
 
 /*        if(this.state.eventsList===null){
             this.setState({userCanJoinEvent: true});
@@ -117,8 +117,15 @@ export default class EventCard extends Component {
             }).catch(function (error) {
                 console.log(error.response);
             })}
-            location.reload();
         }
+        setTimeout(function () {
+
+                window.location.reload(1);
+
+        }, 3000);
+/*
+        location.reload();
+*/
     }
 
     render() {
